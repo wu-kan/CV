@@ -40,9 +40,9 @@ parsep=\parskip, topsep=0.3ex % space before text
 % format: to be applied to the whole title -- label and text
 {\color{Red4}\Large\bf\raggedright}
 % label: prefix the title body
-{}
+{\fnsymbol{section}}
 % sep: space between label and title body
-{0em}
+{.3em}
 % before: code preceding the title body
 {}
 % after: code following the title body
@@ -60,7 +60,7 @@ parsep=\parskip, topsep=0.3ex % space before text
 
 % ----------------------------------------------------------------------------- %
 
-\newcommand{\dateditem}[2]{% set the date text Red4
+\newcommand{\datedsubsection}[2]{% set the date text Red4
 \subsection[#1]{#1 \hfill \textcolor{Red4}{#2}}
 }
 
@@ -69,153 +69,196 @@ parsep=\parskip, topsep=0.3ex % space before text
  \begin{center}
   \LARGE\textbf{\@title}
  \end{center}
+ \begin{center}
+  \texttt{
+  \href{https://resume.wu-kan.cn}{LatestCV}
+  \textperiodcentered\
+  \url{https://wu-kan.cn}
+  \textperiodcentered\
+  \href{https://github.com/wu-kan}{github.com/wu-kan}
+  \textperiodcentered\
+  \href{mailto:cv@wu-kan.cn}{cv@wu-kan.cn}
+  \textperiodcentered\
+  {wukan0621 (wechat)}
+ }
+\end{center}
 }
 \makeatother
 
-\title{吴坎 \textperiodcentered\ Kan Wu}
+\title{Kan Wu \textperiodcentered\ 吴坎}
 
 % ----------------------------------------------------------------------------- %
 
 \begin{document}
- \maketitle
 
- \begin{center}
-  \texttt{
-   \href{https://github.com/wu-kan/CV/releases}{LatestCV}
-   \textperiodcentered\
-   \url{https://wu-kan.cn} 
-   \textperiodcentered\
-   \href{https://github.com/wu-kan}{github.com/wu-kan}
-   \textperiodcentered\
-   \href{mailto:cv@wu-kan.cn}{cv@wu-kan.cn}
-   \textperiodcentered\
-   {wukan0621 (wechat)}
-  }
- \end{center}
+% ----------------------------------------------------------------------------- %
 
- % ----------------------------------------------------------------------------- %
+\maketitle
 
- \section{Education}
+\section{Education}
 
- \dateditem{\textbf{中山大学} \quad 计算机科学与技术 \quad 本科 \textperiodcentered\ 硕博连读}{17/09 -- 26/06 (expected)}
+\datedsubsection{\textbf{Sun Yat-sen University} \quad B.E. \textperiodcentered\ Ph.D. \quad in Computer Science}{17/09 -- 26/06 (expected)}
 
- \begin{itemize}
-  \item 导师：\href{https://cse.sysu.edu.cn/content/2483}{卢宇彤}、\href{https://xianweiz.github.io/}{张献伟}@\href{http://nscc-gz.cn/}{国家超级计算广州中心}
-  \item 研究方向：异构系统设计与加速；软硬件结合的体系优化
- \end{itemize}
+\begin{itemize}
+  \item Supervised by \href{https://cse.sysu.edu.cn/content/2483}{Yutong Lu}, \href{https://cse.sysu.edu.cn/content/5592}{Xianwei Zhang}
+  \item Currently interested in \textbf{compiler-hradware co-design} and \textbf{gpgpu architecture}
+\end{itemize}
 
- \section{Project}
+\section{Research}
 
- \dateditem{\textbf{\large SMILE: LLC-based Shared Memory Expansion to Improve GPU Thread Level Parallelism}}{22/04 -- 23/06}
- 
- Tianyu Guo, Xuanteng Huang, \textbf{Kan Wu}, Xianwei Zhang, Nong Xiao. \href{https://www.dac.com/Conference/24-Speaker-Resource-Page}{DAC'24}
- 
- \begin{itemize}
+\datedsubsection{\textbf{\large SMILE: LLC-based Shared Memory Expansion to Improve GPU Thread Level Parallelism}}{22/04 -- 23/06}
+
+Tianyu Guo, Xuanteng Huang, \textbf{Kan Wu}, Xianwei Zhang, Nong Xiao. \href{https://www.dac.com/Conference/24-Speaker-Resource-Page}{DAC'24}
+
+\datedsubsection{\textbf{\large RollBin: Reducing code-size via loop rerolling at binary level}}{22/02 -- 22/03}
+Tianao Ge, Zewei Mo, \textbf{Kan Wu}, Xianwei Zhang, Yutong Lu.
+\href{https://pldi22/sigplan.org/details/LCTES-22/9/RollBin-Reducing-code-size-via-loop-rerolling-at-binary-level}{LCTES'22}
+
+\datedsubsection{\textbf{\large  Accelerate Vision Transformer Training on the new generation Sunway supercomputer}}{21/08 -- 21/09}
+
+SACA（Sunway Accelerate Computing Architecture）.
+\href{https://sysu-scc.feishu.cn/file/boxcnsEncoYfL79hceRLrAP11Jg}{Sunway Cup}
+
+\datedsubsection{\textbf{\large Implementation and optimization of HPL-AI benchmark for domestic heterogeneous processors}}{20/11 -- 21/02}
+
+AscendCL/CUDA. \href{https://wu-kan.cn/21/03/14/HPL-AI/}{Outstanding Undergraduate Thesis}
+
+\section{Experience}
+
+TBD. Or refer to Section-\ref{sec:经历} instead.
+
+\section{Honor}
+
+TBD. Or refer to Section-\ref{sec:荣誉} instead.
+
+\newpage
+
+\maketitle
+
+\section{教育}
+
+\datedsubsection{\textbf{中山大学} \quad 本科 \textperiodcentered\ 硕博连读 \quad 计算机科学与技术}{17/09 -- 26/06（预期）}
+
+\begin{itemize}
+  \item 导师：\href{https://cse.sysu.edu.cn/content/2483}{卢宇彤}，\href{https://cse.sysu.edu.cn/content/5592}{张献伟}
+  \item 研究方向：\textbf{软硬协同的体系优化}，\textbf{异构系统设计与加速}
+\end{itemize}
+
+\section{科研}
+
+\datedsubsection{\textbf{\large SMILE: LLC-based Shared Memory Expansion to Improve GPU Thread Level Parallelism}}{22/04 -- 23/06}
+
+Tianyu Guo, Xuanteng Huang, \textbf{Kan Wu}, Xianwei Zhang, Nong Xiao. \href{https://www.dac.com/Conference/24-Speaker-Resource-Page}{DAC'24}
+
+\begin{itemize}
   \item 提出面向 GPU 架构的硬件创新 SMILE，使用 Last Level Cache 提高线程并行度
 
   \item 在项目前期提出初版硬件架构设计
- \end{itemize}
+\end{itemize}
 
- \dateditem{\textbf{\large RollBin: Reducing code-size via loop rerolling at binary level}}{22/02 -- 22/03}
- Tianao Ge, Zewei Mo, \textbf{Kan Wu}, Xianwei Zhang, Yutong Lu.
- \href{https://pldi22/sigplan.org/details/LCTES-22/9/RollBin-Reducing-code-size-via-loop-rerolling-at-binary-level}{LCTES'22}
- \begin{itemize}
+\datedsubsection{\textbf{\large RollBin: Reducing code-size via loop rerolling at binary level}}{22/02 -- 22/03}
+Tianao Ge, Zewei Mo, \textbf{Kan Wu}, Xianwei Zhang, Yutong Lu.
+\href{https://pldi22/sigplan.org/details/LCTES-22/9/RollBin-Reducing-code-size-via-loop-rerolling-at-binary-level}{LCTES'22}
+\begin{itemize}
   \item 提出一种二进制代码优化手段 RollBin，在实验中相比已经存在的技术提升 31\%
-    -- 38\%
+        -- 38\%
   \item 参与论文思路讨论、实验验证、数据整理与可视化、论文撰写
- \end{itemize}
+\end{itemize}
 
- \dateditem{\textbf{\large 面向新一代神威超级计算机的Vision Transformer模型训练过程优化}}{21/08 -- 21/09}
+\datedsubsection{\textbf{\large 面向新一代神威超级计算机的Vision Transformer模型训练过程优化}}{21/08 -- 21/09}
 
- SACA（Sunway Accelerate Computing Architecture）.
- \href{https://sysu-scc.feishu.cn/file/boxcnsEncoYfL79hceRLrAP11Jg}{“神威杯”参赛作品}
+SACA（Sunway Accelerate Computing Architecture）.
+\href{https://sysu-scc.feishu.cn/file/boxcnsEncoYfL79hceRLrAP11Jg}{神威杯参赛作品}
 
- \begin{itemize}
+\begin{itemize}
   \item 在新一代神威超算上优化 SWPyTorch 使用 256 节点训练 ViT 模型的过程
   \item 前向过程加速上千倍，反向与权重更新过程加速上百倍
   \item 算例规模下六核组 SGEMM 峰值性能超过 8.2 TFlops，达到理论性能的 59.24\%
- \end{itemize}
+\end{itemize}
 
- \dateditem{\textbf{\large 面向国产异构处理器的HPL-AI基准实现及优化}}{20/11 -- 21/02}
+\datedsubsection{\textbf{\large 面向国产异构处理器的HPL-AI基准实现及优化}}{20/11 -- 21/02}
 
- AscendCL/CUDA. \href{https://wu-kan.cn/21/03/14/HPL-AI/}{本科毕业设计}
+AscendCL/CUDA. \href{https://wu-kan.cn/21/03/14/HPL-AI/}{本科毕业设计}
 
- \begin{itemize}
+\begin{itemize}
   \item 首个开源的多节点 HPL-AI 基准实现，基于 hpl-2.3 并达到 2.59x 加速比
 
   \item 使用 NPU（昇腾910）的半精度算力加速 Linpack 求解，然后通过数值迭代提升精度
 
   \item 在X86、ARM、GPU、NPU等多种环境上通过正确性、可扩展性验证
- \end{itemize}
+\end{itemize}
 
- % ----------------------------------------------------------------------------- %
+% ----------------------------------------------------------------------------- %
 
- \section{Experience}
+\section{经历}
+\label{sec:经历}
 
- \dateditem{\textbf{中山大学}\quad 计算机学院}{21/09 -- 22/06}
- 
- 首届\href{https://cse.sysu.edu.cn/content/5366}{``冯''班}
- 助教. 编译原理, 组成原理
- 
- \begin{itemize}
+\datedsubsection{\textbf{中山大学}\quad 计算机学院}{21/09 -- 22/06}
+
+首届\href{https://cse.sysu.edu.cn/content/5366}{``冯''班}
+助教. 编译原理, 组成原理
+
+\begin{itemize}
   \item 独立设计编译原理实验 \href{https://github.com/arcsysu/SYsU-lang}{SYsU-lang}，并应用于课堂教学
 
-  \item 发起并参与设计组成原理实验 \href{https://yatcpu.sysu.tech/}{YatCPU}（“逸芯”）
- \end{itemize}
+  \item 发起并参与设计组成原理实验 \href{https://yatcpu.sysu.tech/}{YatCPU}（``逸芯''）
+\end{itemize}
 
- \dateditem{\textbf{Bytedance}\quad AI Lab Speech \& Audio Team, Beijing}{21/02 -- 21/08}
- 
- 算法引擎实习生. Panther 推理引擎 GPU 后端
- 
- \begin{itemize}
+\datedsubsection{\textbf{Bytedance}\quad AI Lab Speech \& Audio Team, Beijing}{21/02 -- 21/08}
+
+算法引擎实习生. Panther 推理引擎 GPU 后端
+
+\begin{itemize}
   \item 开发定制 TransformerDecoder 算子，同时编写对应单元测试、图匹配脚本
-   \begin{itemize}
-    \item 相关模型在 NVIDIA T4 上推理加速$1.6\times$（80ms$\to$50ms）
-   \end{itemize}
+        \begin{itemize}
+          \item 相关模型在 NVIDIA T4 上推理加速$1.6\times$（80ms$\to$50ms）
+        \end{itemize}
 
   \item 基于CUTLASS的量化multihead attention算子（batchGemm-Softmax-batchGemm）
-   \begin{itemize}
-    \item 序列长度较短时，相较基于cublasLt的原始实现加速7倍以上
-   \end{itemize}
- \end{itemize}
+        \begin{itemize}
+          \item 序列长度较短时，相较基于cublasLt的原始实现加速7倍以上
+        \end{itemize}
+\end{itemize}
 
- \dateditem{\textbf{中山大学}\quad 国家超级计算广州中心}{20/3 -- 21/06}
+\datedsubsection{\textbf{中山大学}\quad 国家超级计算广州中心}{20/3 -- 21/06}
 
- 队长. \href{https://scc.sysu.tech}{中山大学超算队}
+队长. \href{https://scc.sysu.tech}{中山大学超算队}
 
- \begin{itemize}
+\begin{itemize}
   \item 在 ASC 决赛中
-   \begin{itemize}
-    \item 调整主板接线实现激进功耗控制，\href{https://mp.weixin.qq.com/s?__biz=MzI5NzUxMDAxOQ==&mid=2247486028&idx=1&sn=08b70942a6e7b0f8e4cd42a98789f4fe}{在三千瓦功耗限制下打破
-     Linpack 纪录并提升57\%}
+        \begin{itemize}
+          \item 调整主板接线实现激进功耗控制，\href{https://mp.weixin.qq.com/s?__biz=MzI5NzUxMDAxOQ==&mid=2247486028&idx=1&sn=08b70942a6e7b0f8e4cd42a98789f4fe}{在三千瓦功耗限制下打破
+                  Linpack 纪录并提升57\%}
 
-    \item \href{https://wu-kan.cn/21/05/11/\%E9\%87\%8F\%E5\%AD\%90\%E7\%BA\%BF\%E8\%B7\%AF\%E6\%A8\%A1\%E6\%8B\%9F\%E5\%99\%A8QuEST\%E5\%9C\%A8\%E5\%A4\%9AGPU\%E5\%B9\%B3\%E5\%8F\%B0\%E4\%B8\%8A\%E7\%9A\%84\%E6\%80\%A7\%E8\%83\%BD\%E4\%BC\%98\%E5\%8C\%96/}{负责量子线路模拟器赛题QuEST在多GPU平台上的性能优化}
-   \end{itemize}
+          \item \href{https://wu-kan.cn/21/05/11/\%E9\%87\%8F\%E5\%AD\%90\%E7\%BA\%BF\%E8\%B7\%AF\%E6\%A8\%A1\%E6\%8B\%9F\%E5\%99\%A8QuEST\%E5\%9C\%A8\%E5\%A4\%9AGPU\%E5\%B9\%B3\%E5\%8F\%B0\%E4\%B8\%8A\%E7\%9A\%84\%E6\%80\%A7\%E8\%83\%BD\%E4\%BC\%98\%E5\%8C\%96/}{负责量子线路模拟器赛题QuEST在多GPU平台上的性能优化}
+        \end{itemize}
 
   \item 在队内定期开展\href{https://scc.sysu.tech/Talks/}{技术分享}，在国内所有超算相关竞赛获前三名，受邀
-   IPCC 赛前讲座
-   \begin{itemize}
-    \item \href{https://sysu-scc.feishu.cn/file/boxcnyn3xp9JJz7rNyjUtUAhHLc}{超算竞赛备赛指南}，\href{https://sysu-scc.feishu.cn/file/boxcnjtWoYlkvSF4pF4grCwudFr}{超算基本原理与方法论}，\href{https://sysu-scc.feishu.cn/file/boxcnQcRimOByBFREJEc5lgtgXc}{现代处理器优化概论}
-   \end{itemize}
- \end{itemize}
+        IPCC 赛前讲座
+        \begin{itemize}
+          \item \href{https://sysu-scc.feishu.cn/file/boxcnyn3xp9JJz7rNyjUtUAhHLc}{超算竞赛备赛指南}，\href{https://sysu-scc.feishu.cn/file/boxcnjtWoYlkvSF4pF4grCwudFr}{超算基本原理与方法论}，\href{https://sysu-scc.feishu.cn/file/boxcnQcRimOByBFREJEc5lgtgXc}{现代处理器优化概论}
+        \end{itemize}
+\end{itemize}
 
- % ----------------------------------------------------------------------------- %
+% ----------------------------------------------------------------------------- %
 
- \section{Honor}
- \dateditem{\href{https://mp.weixin.qq.com/s/ahnG7gJLBu9CMCYjk1_CkQ}{\texttt{二等奖\& oneAPI技术创新一等奖}}，“英特尔杯”并行应用挑战赛（PAC），应用组}{22/12 }
- \dateditem{\href{https://mp.weixin.qq.com/s/k7mjyaKs-rGPOcMQTIrKqg}{\texttt{金奖（1/unknown）}}，鲲鹏应用创新大赛，HPC高性能计算赛道}{22/10 }
- \dateditem{\texttt{\href{https://github.com/arcsysu/SYsU-lang-paper}{优秀论文一等奖}}，中国高校计算机教育大会（CCEC）}{22/07 }
- \dateditem{\href{https://mp.weixin.qq.com/s/L7YX4aaaNAlNCKDYOEhMSA}{\texttt{二等奖（3/130+）}}，ACM中国-国际并行挑战赛（ACM-IPCC）}{21/11 }
- \dateditem{\href{https://mp.weixin.qq.com/s/GQsaR_V1NoGzCvbGARMeEA}{\texttt{二等奖（3/100+）}}，“神威杯”并行应用挑战赛（CPC）}{21/10 }
- \dateditem{\href{https://mp.weixin.qq.com/s/AJKqG2KvLl6n_88_8IzsYw}{\texttt{CCF优秀大学生（全国共94名，中山大学共1名）}}，中国计算机学会（CCF-ECA）}{21/09 }
- \dateditem{\href{https://wu-kan.cn/21/03/14/HPL-AI/}{\texttt{优秀本科毕业论文（Top 5\%）}}，中山大学}{21/05 }
- \dateditem{\href{https://wu-kan.cn/21/05/19/\%E6\%88\%91\%E7\%9A\%84ASC\%E5\%86\%B3\%E8\%B5\%9B\%E5\%A4\%8D\%E7\%9B\%98-\%E5\%86\%92\%E9\%99\%A9-\%E5\%A4\%B1\%E8\%AF\%AF\%E4\%B8\%8E\%E7\%BF\%BB\%E8\%BD\%A6/}{\texttt{最高性能奖 \& 一等奖（3/400+）}}，世界大学生超级计算机竞赛（ASC）}{21/05 }
- \dateditem{\href{https://wu-kan.cn/_posts/20-10-17-20-CCF-CCSP\%E7\%AB\%9E\%E8\%B5\%9B-\%E5\%90\%AB\%E5\%88\%86\%E8\%B5\%9B\%E5\%8C\%BA\%E7\%AB\%9E\%E8\%B5\%9B/}{\texttt{金奖（4/98）}}，CCF 大学生计算机系统与程序设计竞赛（CCSP），华南赛区}{20/10 }
- \dateditem{\texttt{一等奖学金\& 学科竞赛一等奖学金（Top 5\%）}，中山大学}{20/10 }
- \dateditem{\href{https://mp.weixin.qq.com/s/ahnG7gJLBu9CMCYjk1_CkQ}{\texttt{银牌（2/100+）}}，“英特尔杯”并行应用挑战赛（PAC），优化组}{20/09 }
- \dateditem{\href{http://cse.sysu.edu.cn/content/5412}{\texttt{一等奖（3/unknown）}}， 中科院“先导杯”并行应用挑战赛（CAS-PRA）}{20/08 }
- \dateditem{\href{https://wu-kan.cn/_posts/19-12-16-\%E7\%AC\%AC\%E5\%8D\%81\%E5\%85\%AB\%E6\%AC\%A1CCF\%E8\%AE\%A1\%E7\%AE\%97\%E6\%9C\%BA\%E8\%BD\%AF\%E4\%BB\%B6\%E8\%83\%BD\%E5\%8A\%9B\%E8\%AE\%A4\%E8\%AF\%81/}{\texttt{Top 0.05\%（6/11395）}}，CCF 计算机软件能力认证（CCF-CSP）}{19/12 }
- \dateditem{\href{https://wu-kan.cn/_posts/19-11-04-\%E5\%86\%8D\%E8\%A7\%81-\%E7\%AE\%97\%E6\%B3\%95\%E7\%AB\%9E\%E8\%B5\%9B/}{\texttt{银牌}}，国际大学生程序设计竞赛（ICPC），徐州站}{19/11}
- \dateditem{\texttt{金奖$\times 2$}，中国大学生程序设计竞赛（CCPC），广东赛区}{{\href{https://ccpc.io/post/110}{18/05 }，\href{http://www.gdcpc.cn/ArticleView/ArticleDetail?articleId=5cda35a3659ce607a808929a}{19/05 }}}
+\section{荣誉}
+\label{sec:荣誉}
+
+\datedsubsection{\href{https://mp.weixin.qq.com/s/ahnG7gJLBu9CMCYjk1_CkQ}{\texttt{二等奖\& oneAPI技术创新一等奖}}，``英特尔杯''并行应用挑战赛（PAC），应用组}{22/12}
+\datedsubsection{\href{https://mp.weixin.qq.com/s/k7mjyaKs-rGPOcMQTIrKqg}{\texttt{金奖（1/unknown）}}，鲲鹏应用创新大赛，HPC高性能计算赛道}{22/10}
+\datedsubsection{\texttt{\href{https://github.com/arcsysu/SYsU-lang-paper}{优秀论文一等奖}}，中国高校计算机教育大会（CCEC）}{22/07}
+\datedsubsection{\href{https://mp.weixin.qq.com/s/L7YX4aaaNAlNCKDYOEhMSA}{\texttt{二等奖（3/130+）}}，ACM中国-国际并行挑战赛（ACM-IPCC）}{21/11}
+\datedsubsection{\href{https://mp.weixin.qq.com/s/GQsaR_V1NoGzCvbGARMeEA}{\texttt{二等奖（3/100+）}}，``神威杯''并行应用挑战赛（CPC）}{21/10}
+\datedsubsection{\href{https://mp.weixin.qq.com/s/AJKqG2KvLl6n_88_8IzsYw}{\texttt{CCF优秀大学生（全国共94名，中山大学共1名）}}，中国计算机学会（CCF-ECA）}{21/09}
+\datedsubsection{\href{https://wu-kan.cn/21/03/14/HPL-AI/}{\texttt{优秀本科毕业论文（Top 5\%）}}，中山大学}{21/05}
+\datedsubsection{\href{https://wu-kan.cn/21/05/19/\%E6\%88\%91\%E7\%9A\%84ASC\%E5\%86\%B3\%E8\%B5\%9B\%E5\%A4\%8D\%E7\%9B\%98-\%E5\%86\%92\%E9\%99\%A9-\%E5\%A4\%B1\%E8\%AF\%AF\%E4\%B8\%8E\%E7\%BF\%BB\%E8\%BD\%A6/}{\texttt{最高性能奖 \& 一等奖（3/400+）}}，世界大学生超级计算机竞赛（ASC）}{21/05}
+\datedsubsection{\href{https://wu-kan.cn/_posts/20-10-17-20-CCF-CCSP\%E7\%AB\%9E\%E8\%B5\%9B-\%E5\%90\%AB\%E5\%88\%86\%E8\%B5\%9B\%E5\%8C\%BA\%E7\%AB\%9E\%E8\%B5\%9B/}{\texttt{金奖（4/98）}}，CCF 大学生计算机系统与程序设计竞赛（CCSP），华南赛区}{20/10}
+\datedsubsection{\texttt{一等奖学金\& 学科竞赛一等奖学金（Top 5\%）}，中山大学}{20/10}
+\datedsubsection{\href{https://mp.weixin.qq.com/s/ahnG7gJLBu9CMCYjk1_CkQ}{\texttt{银牌（2/100+）}}，``英特尔杯''并行应用挑战赛（PAC），优化组}{20/09}
+\datedsubsection{\href{http://cse.sysu.edu.cn/content/5412}{\texttt{一等奖（3/unknown）}}， 中科院``先导杯''并行应用挑战赛（CAS-PRA）}{20/08}
+\datedsubsection{\href{https://wu-kan.cn/_posts/19-12-16-\%E7\%AC\%AC\%E5\%8D\%81\%E5\%85\%AB\%E6\%AC\%A1CCF\%E8\%AE\%A1\%E7\%AE\%97\%E6\%9C\%BA\%E8\%BD\%AF\%E4\%BB\%B6\%E8\%83\%BD\%E5\%8A\%9B\%E8\%AE\%A4\%E8\%AF\%81/}{\texttt{Top 0.05\%（6/11395）}}，CCF 计算机软件能力认证（CCF-CSP）}{19/12}
+\datedsubsection{\href{https://wu-kan.cn/_posts/19-11-04-\%E5\%86\%8D\%E8\%A7\%81-\%E7\%AE\%97\%E6\%B3\%95\%E7\%AB\%9E\%E8\%B5\%9B/}{\texttt{银牌}}，国际大学生程序设计竞赛（ICPC），徐州站}{19/11}
+\datedsubsection{\texttt{金奖$\times 2$}，中国大学生程序设计竞赛（CCPC），广东赛区}{{\href{https://ccpc.io/post/110}{18/05}，\href{http://www.gdcpc.cn/ArticleView/ArticleDetail?articleId=5cda35a3659ce607a808929a}{19/05}}}
 
 \end{document}
