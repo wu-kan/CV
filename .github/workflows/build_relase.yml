@@ -11,7 +11,7 @@ on:
 
 # For softprops/action-gh-release and cloudflare/pages-action
 permissions:
-  contents: [write, read]
+  contents: read
   deployments: write
 
 jobs:
