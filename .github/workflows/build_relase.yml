@@ -26,7 +26,7 @@ jobs:
       - name: Build
         run: |
           apt-get update -y
-          apt-get install --no-install-recommends -y fonts-noto-cjk-extra
+          apt-get install --no-install-recommends -y fonts-noto-cjk-extra npm
           xelatex main.tex
           xelatex main.tex
           mkdir dist
