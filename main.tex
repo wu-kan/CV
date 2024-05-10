@@ -1,35 +1,17 @@
-\documentclass[fontset=ubuntu]{article}
-
-% Chinese support
-\usepackage{ctex}
+\documentclass[fontset=ubuntu]{ctexart}
 
 % customize section/subsection title
 \usepackage{titlesec}
 
-% customize sep of items
-\usepackage{enumitem}
+% set margin
+\usepackage[margin=0.75in]{geometry}
 
 % define some colors
 \usepackage[x11names]{xcolor}
 
-\usepackage{hyperref}
+\usepackage[colorlinks=true, urlcolor=Red4]{hyperref}
 
-\hypersetup{colorlinks=true, urlcolor=Red4}
-
-\setitemize[1]{ itemsep=0.3ex, % space between item
-partopsep=0.0ex, %
-parsep=\parskip, topsep=0.3ex % space before text
-}
-
-% set margin
-\usepackage[
- a4paper,
- left=0.8in,
- right=0.8in,
- top=0.70in,
- bottom=0.55in,
- nohead
-]{geometry}
+\pagestyle{plain}
 
 % do not need indent in resume
 \setlength{\parindent}{0pt}
@@ -98,7 +80,7 @@ parsep=\parskip, topsep=0.3ex % space before text
 
 \section{Education}
 
-\datedsubsection{\textbf{Sun Yat-sen University} \quad B.E. \textperiodcentered\ Ph.D. \quad in Computer Science}{17/09 -- 26/06 (expected)}
+\datedsubsection{\textbf{Sun Yat-sen University} \quad B.E. \textperiodcentered\ Ph.D. \quad in Computer Science}{17/09 - 26/06 (expected)}
 
 \begin{itemize}
   \item Supervised by \href{https://cse.sysu.edu.cn/content/2483}{Yutong Lu}, \href{https://cse.sysu.edu.cn/content/5592}{Xianwei Zhang}
@@ -107,39 +89,39 @@ parsep=\parskip, topsep=0.3ex % space before text
 
 \section{Research}
 
-\datedsubsection{\textbf{\large SMILE: LLC-based Shared Memory Expansion to Improve GPU Thread Level Parallelism}}{22/04 -- 23/06}
+\datedsubsection{\textbf{\large SMILE: LLC-based Shared Memory Expansion to Improve GPU Thread Level Parallelism}}{22/04 - 23/06}
 
 Tianyu Guo, Xuanteng Huang, \textbf{Kan Wu}, Xianwei Zhang, Nong Xiao. \href{https://www.dac.com/Conference/24-Speaker-Resource-Page}{DAC'24}
 
-\datedsubsection{\textbf{\large RollBin: Reducing code-size via loop rerolling at binary level}}{22/02 -- 22/03}
+\datedsubsection{\textbf{\large RollBin: Reducing code-size via loop rerolling at binary level}}{22/02 - 22/03}
 Tianao Ge, Zewei Mo, \textbf{Kan Wu}, Xianwei Zhang, Yutong Lu.
 \href{https://pldi22/sigplan.org/details/LCTES-22/9/RollBin-Reducing-code-size-via-loop-rerolling-at-binary-level}{LCTES'22}
 
-\datedsubsection{\textbf{\large  Accelerate Vision Transformer Training on the new generation Sunway supercomputer}}{21/08 -- 21/09}
+\datedsubsection{\textbf{\large  Accelerate vision transformer training on the new sunway supercomputer}}{21/08 - 21/09}
 
 SACA (Sunway Accelerate Computing Architecture).
 \href{https://sysu-scc.feishu.cn/file/boxcnsEncoYfL79hceRLrAP11Jg}{Sunway Cup}
 
-\datedsubsection{\textbf{\large Implementation and optimization of HPL-AI benchmark for domestic heterogeneous processors}}{20/11 -- 21/02}
+\datedsubsection{\textbf{\large Implementation and optimization of HPL-AI benchmark for domestic heterogeneous processors}}{20/11 - 21/02}
 
 AscendCL/CUDA. \href{https://wu-kan.cn/21/03/14/HPL-AI/}{Outstanding Undergraduate Thesis}
 
 \section{Experience}
 
-\datedsubsection{\textbf{Sun Yat-sen University}, School of Computer Science and Engineering}{21/02 -- 21/08}
+\datedsubsection{\textbf{Sun Yat-sen University}, School of Computer Science and Engineering}{21/02 - 21/08}
 
-Teach Assistant, \href{https://cse.sysu.edu.cn/content/5366}{``Von Neumann'' experimental class for System and Architecture}
+Teach Assistant, \href{https://cse.sysu.edu.cn/content/5366}{The first year ``Von Neumann'' class for System and Architecture}
 
 \begin{itemize}
-  \item DCS290 - Compilation Principle, 2022 Spring, 2021 Spring.
-  \item DCS3013 - Computer Architecture, 2020 Fall.
+  \item DCS290 - Compilation Principle, 2022 Spring. \href{https://github.com/arcsysu/SYsU-lang}{SYsU-lang}.
+  \item DCS3013 - Computer Architecture, 2021 Fall. \href{https://yatcpu.sysu.tech/}{YatCPU}.
 \end{itemize}
 
-\datedsubsection{\textbf{Bytedance}, AI Lab, Beijing}{21/02 -- 21/08}
+\datedsubsection{\textbf{Bytedance}, AI Lab, Beijing}{21/02 - 21/08}
 
 Machine Learning Engineer (Intern), Speech \& Audio Team
 
-\datedsubsection{\textbf{Sun Yat-sen University}, School of Computer Science and Engineering}{21/02 -- 21/08}
+\datedsubsection{\textbf{Sun Yat-sen University}, School of Computer Science and Engineering}{20/03 - 21/05}
 
 Leader, Student Cluster Competition Team
 
@@ -171,7 +153,7 @@ Leader, Student Cluster Competition Team
 
 \section{教育}
 
-\datedsubsection{\textbf{中山大学} \quad 本科 \textperiodcentered\ 硕博连读 \quad 计算机科学与技术}{17/09 -- 26/06（预期）}
+\datedsubsection{\textbf{中山大学} \quad 本科 \textperiodcentered\ 硕博连读 \quad 计算机科学与技术}{17/09 - 26/06（预期）}
 
 \begin{itemize}
   \item 导师：\href{https://cse.sysu.edu.cn/content/2483}{卢宇彤}，\href{https://cse.sysu.edu.cn/content/5592}{张献伟}
@@ -180,7 +162,7 @@ Leader, Student Cluster Competition Team
 
 \section{科研}
 
-\datedsubsection{\textbf{\large SMILE: LLC-based Shared Memory Expansion to Improve GPU Thread Level Parallelism}}{22/04 -- 23/06}
+\datedsubsection{\textbf{\large SMILE: LLC-based Shared Memory Expansion to Improve GPU Thread Level Parallelism}}{22/04 - 23/06}
 
 Tianyu Guo, Xuanteng Huang, \textbf{Kan Wu}, Xianwei Zhang, Nong Xiao. \href{https://www.dac.com/Conference/24-Speaker-Resource-Page}{DAC'24}
 
@@ -190,16 +172,16 @@ Tianyu Guo, Xuanteng Huang, \textbf{Kan Wu}, Xianwei Zhang, Nong Xiao. \href{htt
   \item 在项目前期提出初版硬件架构设计
 \end{itemize}
 
-\datedsubsection{\textbf{\large RollBin: Reducing code-size via loop rerolling at binary level}}{22/02 -- 22/03}
+\datedsubsection{\textbf{\large RollBin: Reducing code-size via loop rerolling at binary level}}{22/02 - 22/03}
 Tianao Ge, Zewei Mo, \textbf{Kan Wu}, Xianwei Zhang, Yutong Lu.
 \href{https://pldi22/sigplan.org/details/LCTES-22/9/RollBin-Reducing-code-size-via-loop-rerolling-at-binary-level}{LCTES'22}
 \begin{itemize}
   \item 提出一种二进制代码优化手段 RollBin，在实验中相比已经存在的技术提升 31\%
-        -- 38\%
+        - 38\%
   \item 参与论文思路讨论、实验验证、数据整理与可视化、论文撰写
 \end{itemize}
 
-\datedsubsection{\textbf{\large 面向新一代神威超级计算机的Vision Transformer模型训练过程优化}}{21/08 -- 21/09}
+\datedsubsection{\textbf{\large 面向新一代神威超级计算机的Vision Transformer模型训练过程优化}}{21/08 - 21/09}
 
 SACA（Sunway Accelerate Computing Architecture）.
 \href{https://sysu-scc.feishu.cn/file/boxcnsEncoYfL79hceRLrAP11Jg}{神威杯参赛作品}
@@ -210,15 +192,13 @@ SACA（Sunway Accelerate Computing Architecture）.
   \item 算例规模下六核组 SGEMM 峰值性能超过 8.2 TFlops，达到理论性能的 59.24\%
 \end{itemize}
 
-\datedsubsection{\textbf{\large 面向国产异构处理器的HPL-AI基准实现及优化}}{20/11 -- 21/02}
+\datedsubsection{\textbf{\large 面向国产异构处理器的HPL-AI基准实现及优化}}{20/11 - 21/02}
 
 AscendCL/CUDA. \href{https://wu-kan.cn/21/03/14/HPL-AI/}{本科毕业设计}
 
 \begin{itemize}
   \item 首个开源的多节点 HPL-AI 基准实现，基于 hpl-2.3 并达到 2.59x 加速比
-
   \item 使用 NPU（昇腾910）的半精度算力加速 Linpack 求解，然后通过数值迭代提升精度
-
   \item 在X86、ARM、GPU、NPU等多种环境上通过正确性、可扩展性验证
 \end{itemize}
 
@@ -227,18 +207,17 @@ AscendCL/CUDA. \href{https://wu-kan.cn/21/03/14/HPL-AI/}{本科毕业设计}
 \section{经历}
 \label{sec:经历}
 
-\datedsubsection{\textbf{中山大学}\quad 计算机学院}{21/09 -- 22/06}
+\datedsubsection{\textbf{中山大学}\quad 计算机学院}{21/09 - 22/06}
 
 首届\href{https://cse.sysu.edu.cn/content/5366}{``冯''班}
 助教. 编译原理, 组成原理
 
 \begin{itemize}
   \item 独立设计编译原理实验 \href{https://github.com/arcsysu/SYsU-lang}{SYsU-lang}，并应用于课堂教学
-
   \item 发起并参与设计组成原理实验 \href{https://yatcpu.sysu.tech/}{YatCPU}（``逸芯''）
 \end{itemize}
 
-\datedsubsection{\textbf{Bytedance}\quad AI Lab Speech \& Audio Team, Beijing}{21/02 -- 21/08}
+\datedsubsection{\textbf{Bytedance}\quad AI Lab Speech \& Audio Team, Beijing}{21/02 - 21/08}
 
 算法引擎实习生. Panther 推理引擎 GPU 后端
 
@@ -247,14 +226,13 @@ AscendCL/CUDA. \href{https://wu-kan.cn/21/03/14/HPL-AI/}{本科毕业设计}
         \begin{itemize}
           \item 相关模型在 NVIDIA T4 上推理加速$1.6\times$（80ms$\to$50ms）
         \end{itemize}
-
   \item 基于CUTLASS的量化multihead attention算子（batchGemm-Softmax-batchGemm）
         \begin{itemize}
           \item 序列长度较短时，相较基于cublasLt的原始实现加速7倍以上
         \end{itemize}
 \end{itemize}
 
-\datedsubsection{\textbf{中山大学}\quad 国家超级计算广州中心}{20/3 -- 21/06}
+\datedsubsection{\textbf{中山大学}\quad 国家超级计算广州中心}{20/3 - 21/06}
 
 队长. \href{https://scc.sysu.tech}{中山大学超算队}
 
@@ -263,10 +241,8 @@ AscendCL/CUDA. \href{https://wu-kan.cn/21/03/14/HPL-AI/}{本科毕业设计}
         \begin{itemize}
           \item 调整主板接线实现激进功耗控制，\href{https://mp.weixin.qq.com/s?__biz=MzI5NzUxMDAxOQ==&mid=2247486028&idx=1&sn=08b70942a6e7b0f8e4cd42a98789f4fe}{在三千瓦功耗限制下打破
                   Linpack 纪录并提升57\%}
-
           \item \href{https://wu-kan.cn/21/05/11/\%E9\%87\%8F\%E5\%AD\%90\%E7\%BA\%BF\%E8\%B7\%AF\%E6\%A8\%A1\%E6\%8B\%9F\%E5\%99\%A8QuEST\%E5\%9C\%A8\%E5\%A4\%9AGPU\%E5\%B9\%B3\%E5\%8F\%B0\%E4\%B8\%8A\%E7\%9A\%84\%E6\%80\%A7\%E8\%83\%BD\%E4\%BC\%98\%E5\%8C\%96/}{负责量子线路模拟器赛题QuEST在多GPU平台上的性能优化}
         \end{itemize}
-
   \item 在队内定期开展\href{https://scc.sysu.tech/Talks/}{技术分享}，在国内所有超算相关竞赛获前三名，受邀
         IPCC 赛前讲座
         \begin{itemize}
