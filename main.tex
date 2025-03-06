@@ -1,4 +1,7 @@
-\documentclass[fontset=ubuntu]{ctexart}
+\documentclass[
+    % fontset=ubuntu
+    fontset=fandol
+]{ctexart}
 
 % customize section/subsection title
 \usepackage{titlesec}
@@ -39,7 +42,7 @@
 \titlespacing*{\subsection}{0cm}{*1.6}{0.0ex}
 
 \newcommand{\datedsubsection}[2]{% set the date text Red4
-\subsection[#1]{#1 \hfill \textcolor{Red4}{#2}}
+\subsection[#1]{#1 \hfill #2}
 }
 
 \makeatletter
@@ -75,26 +78,29 @@
 \datedsubsection{\textbf{Sun Yat-sen University} \quad B.E. \textperiodcentered\ Ph.D. \quad in Computer Science}{17/09 - 26/06 (expected)}
 
 \begin{itemize}
-  \item Supervised by \href{https://cse.sysu.edu.cn/content/2483}{Yutong Lu}, \href{https://cse.sysu.edu.cn/content/5592}{Xianwei Zhang}
-  \item Currently interested in \textbf{compiler-hradware co-design} and \textbf{gpgpu architecture}
+  \item Supervised by \href{https://cse.sysu.edu.cn/content/2483}{Y. Lu}, \href{https://cse.sysu.edu.cn/content/5592}{X. Zhang}, interested in \textbf{compiler} and \textbf{gpgpu architecture}
 \end{itemize}
 
 \section{Research}
 
-\datedsubsection{\textbf{\large SMILE: LLC-based Shared Memory Expansion to Improve GPU Thread Level Parallelism}}{22/04 - 23/06}
+\textbf{\large XFuse: PTX level Code Fusion for GPU Concurrent Execution}
 
-Tianyu Guo, Xuanteng Huang, \textbf{Kan Wu}, Xianwei Zhang, Nong Xiao. \href{https://www.dac.com/Conference/24-Speaker-Resource-Page}{DAC'24}
+\underline{K. Wu}, X. Zhang, Y. Lu. TACO (submitting)
 
-\datedsubsection{\textbf{\large RollBin: Reducing code-size via loop rerolling at binary level}}{22/02 - 22/03}
-Tianao Ge, Zewei Mo, \textbf{Kan Wu}, Xianwei Zhang, Yutong Lu.
+\textbf{\large GoPTX: Fine-grained GPGPU Kernel Fusion at PTX Level by Instruction Weaving}
+
+\underline{K. Wu}, Z. Lin, X. Meng, Z. Zheng, W. Pan, X. Zhang, Y. Lu. DAC'25
+
+\textbf{\large SMILE: LLC-based Shared Memory Expansion to Improve GPU Thread Level Parallelism}
+
+T. Guo, X. Huang, \underline{K. Wu}, X. Zhang, N. Xiao. \href{https://www.dac.com/Conference/24-Speaker-Resource-Page}{DAC'24}
+
+\textbf{\large RollBin: Reducing code-size via loop rerolling at binary level}
+
+T. Ge, Z. Mo, \underline{K. Wu}, X. Zhang, Y. Lu.
 \href{https://pldi22/sigplan.org/details/LCTES-22/9/RollBin-Reducing-code-size-via-loop-rerolling-at-binary-level}{LCTES'22}
 
-\datedsubsection{\textbf{\large  Accelerate vision transformer training on the new sunway supercomputer}}{21/08 - 21/09}
-
-SACA (Sunway Accelerate Computing Architecture).
-\href{https://sysu-scc.feishu.cn/file/boxcnsEncoYfL79hceRLrAP11Jg}{Sunway Cup}
-
-\datedsubsection{\textbf{\large Implementation and optimization of HPL-AI benchmark for domestic heterogeneous processors}}{20/11 - 21/02}
+\textbf{\large Implementation and optimization of HPL-AI benchmark for domestic heterogeneous processors}
 
 AscendCL/CUDA. \href{https://wu-kan.cn/21/03/14/HPL-AI/}{Outstanding Undergraduate Thesis}
 
@@ -109,9 +115,7 @@ Teach Assistant, \href{https://cse.sysu.edu.cn/content/5366}{The first year ``Vo
   \item DCS3013 - Computer Architecture, 2021 Fall. \href{https://yatcpu.sysu.tech/}{YatCPU}.
 \end{itemize}
 
-\datedsubsection{\textbf{Bytedance}, AI Lab, Beijing}{21/02 - 21/08}
-
-Machine Learning Engineer (Intern), Speech \& Audio Team
+\datedsubsection{\textbf{Bytedance}, AI Lab, Machine Learning Engineer (Intern)}{21/02 - 21/08}
 
 \datedsubsection{\textbf{Sun Yat-sen University}, School of Computer Science and Engineering}{20/03 - 21/05}
 
@@ -119,7 +123,7 @@ Leader, Student Cluster Competition Team
 
 \section{Honor}
 
-\datedsubsection{\href{https://mp.weixin.qq.com/s/AJKqG2KvLl6n_88_8IzsYw}{\texttt{CCF Elite Collegiate Award (98 undergrads in China, only 1 in Sun Yat-sen University)}}, China Computer Federation (CCF)}{21/09}
+\datedsubsection{\href{https://mp.weixin.qq.com/s/AJKqG2KvLl6n_88_8IzsYw}{\texttt{CCF Elite Collegiate Award (98 in China, 1 in SYSU)}}, China Computer Federation (CCF)}{21/09}
 \datedsubsection{\href{https://wu-kan.cn/21/03/14/HPL-AI/}{\texttt{Outstanding Undergraduate Thesis Award}}, Sun Yat-sen University}{21/05}
 \datedsubsection{\href{https://wu-kan.cn/21/05/19/\%E6\%88\%91\%E7\%9A\%84ASC\%E5\%86\%B3\%E8\%B5\%9B\%E5\%A4\%8D\%E7\%9B\%98-\%E5\%86\%92\%E9\%99\%A9-\%E5\%A4\%B1\%E8\%AF\%AF\%E4\%B8\%8E\%E7\%BF\%BB\%E8\%BD\%A6/}{\texttt{Highest Linpack Award \& First Prize(3/400+)}}, ASC Student Supercomputer Challenge}{21/05}
 \datedsubsection{First-Prize Scholarship (Top 5\%), Sun Yat-sen University}{20/10}
@@ -148,32 +152,48 @@ Leader, Student Cluster Competition Team
 \datedsubsection{\textbf{中山大学} \quad 本科 \textperiodcentered\ 硕博连读 \quad 计算机科学与技术}{17/09 - 26/06（预期）}
 
 \begin{itemize}
-  \item 导师：\href{https://cse.sysu.edu.cn/content/2483}{卢宇彤}，\href{https://cse.sysu.edu.cn/content/5592}{张献伟}
-  \item 研究方向：\textbf{软硬协同的体系优化}，\textbf{异构系统设计与加速}
+  \item 导师：\href{https://cse.sysu.edu.cn/content/2483}{卢宇彤}，\href{https://cse.sysu.edu.cn/content/5592}{张献伟}，方向：\textbf{编译}/\textbf{GPU体系结构}
 \end{itemize}
 
 \section{科研}
 
-\datedsubsection{\textbf{\large SMILE: LLC-based Shared Memory Expansion to Improve GPU Thread Level Parallelism}}{22/04 - 23/06}
+\hspace{.2cm}
 
-Tianyu Guo, Xuanteng Huang, \textbf{Kan Wu}, Xianwei Zhang, Nong Xiao. \href{https://www.dac.com/Conference/24-Speaker-Resource-Page}{DAC'24}
+\textbf{\large XFuse: PTX level Code Fusion for GPU Concurrent Execution}
+
+\underline{K. Wu}, X. Zhang, Y. Lu. TACO (submitting)
 
 \begin{itemize}
-  \item 提出面向 GPU 架构的硬件创新 SMILE，使用 Last Level Cache 提高线程并行度
-
-  \item 在项目前期提出初版硬件架构设计
+    \item GoPTX 的扩展工作，增加多种调优参数与内核匹配策略，总体性能提升至 15.8\%
 \end{itemize}
 
-\datedsubsection{\textbf{\large RollBin: Reducing code-size via loop rerolling at binary level}}{22/02 - 22/03}
-Tianao Ge, Zewei Mo, \textbf{Kan Wu}, Xianwei Zhang, Yutong Lu.
+\textbf{\large GoPTX: Fine-grained GPGPU Kernel Fusion at PTX Level by Instruction Weaving}
+
+\underline{K. Wu}, Z. Lin, X. Meng, Z. Zheng, W. Pan, X. Zhang, Y. Lu. \url{https://github.com/wu-kan/GoPTX}. DAC'25
+
+\begin{itemize}
+    \item 在 PTX 层面进行指令交织（类似于超线程），平均性能提升 11.2\% 最大 23\%，ILP 最大提升 50\%
+    \item 提出控制流图归并算法、延迟模型、交织算法与自适应切片算法，可处理死锁等特殊情况
+\end{itemize}
+
+\textbf{\large SMILE: LLC-based Shared Memory Expansion to Improve GPU Thread Level Parallelism}
+
+T. Guo, X. Huang, \underline{K. Wu}, X. Zhang, N. Xiao. \href{https://www.dac.com/Conference/24-Speaker-Resource-Page}{DAC'24}
+
+\begin{itemize}
+  \item 提出面向 GPU 架构的硬件创新 SMILE，使用 Last Level Cache 增加 SMEM 大小与线程并行度
+
+  \item 项目前期负责初版架构设计，后因身体原因暂时退出
+\end{itemize}
+
+\textbf{\large RollBin: Reducing code-size via loop rerolling at binary level}
+
+T. Ge, Z. Mo, \underline{K. Wu}, X. Zhang, Y. Lu.
 \href{https://pldi22/sigplan.org/details/LCTES-22/9/RollBin-Reducing-code-size-via-loop-rerolling-at-binary-level}{LCTES'22}
-\begin{itemize}
-  \item 提出一种二进制代码优化手段 RollBin，在实验中相比已经存在的技术提升 31\%
-        - 38\%
-  \item 参与论文思路讨论、实验验证、数据整理与可视化、论文撰写
-\end{itemize}
 
-\datedsubsection{\textbf{\large 面向新一代神威超级计算机的Vision Transformer模型训练过程优化}}{21/08 - 21/09}
+\hspace{.2cm}
+
+\textbf{\large 面向新一代神威超级计算机的Vision Transformer模型训练过程优化}
 
 SACA（Sunway Accelerate Computing Architecture）.
 \href{https://sysu-scc.feishu.cn/file/boxcnsEncoYfL79hceRLrAP11Jg}{神威杯参赛作品}
@@ -184,32 +204,29 @@ SACA（Sunway Accelerate Computing Architecture）.
   \item 算例规模下六核组 SGEMM 峰值性能超过 8.2 TFlops，达到理论性能的 59.24\%
 \end{itemize}
 
-\datedsubsection{\textbf{\large 面向国产异构处理器的HPL-AI基准实现及优化}}{20/11 - 21/02}
+\textbf{\large 面向国产异构处理器的HPL-AI基准实现及优化}
 
 AscendCL/CUDA. \href{https://wu-kan.cn/21/03/14/HPL-AI/}{本科毕业设计}
 
 \begin{itemize}
   \item 首个开源的多节点 HPL-AI 基准实现，基于 hpl-2.3 并达到 2.59x 加速比
-  \item 使用 NPU（昇腾910）的半精度算力加速 Linpack 求解，然后通过数值迭代提升精度
+  \item 使用 NPU（Ascend 910A）的半精度算力加速 Linpack 求解，然后通过数值迭代提升精度
   \item 在X86、ARM、GPU、NPU等多种环境上通过正确性、可扩展性验证
 \end{itemize}
 
 \section{经历}
 \label{sec:经历}
 
-\datedsubsection{\textbf{中山大学}\quad 计算机学院}{21/09 - 22/06}
+\hspace{.2cm}
 
-首届\href{https://cse.sysu.edu.cn/content/5366}{``冯''班}
-助教. 编译原理, 组成原理
+\datedsubsection{\textbf{中山大学}. 计算机学院首届\href{https://cse.sysu.edu.cn/content/5366}{``冯''班}
+助教. 编译原理, 组成原理}{21/09 - 22/06}
 
 \begin{itemize}
-  \item 独立设计编译原理实验 \href{https://github.com/arcsysu/SYsU-lang}{SYsU-lang}，并应用于课堂教学
-  \item 发起并参与设计组成原理实验 \href{https://yatcpu.sysu.tech/}{YatCPU}（``逸芯''）
+  \item 作为核心发起并参与编译原理实验 \href{https://yatcc-ai.com/}{YatCC}、组成原理实验\href{https://yatcpu.sysu.tech/}{YatCPU}，成为学院\href{https://mp.weixin.qq.com/s?__biz=MzAwNzczODEzMw==&mid=2653124398&idx=1&sn=b2d2f2b4aa4ca8fd8937385aa0da45d7}{标杆}
 \end{itemize}
 
-\datedsubsection{\textbf{Bytedance}\quad AI Lab Speech \& Audio Team, Beijing}{21/02 - 21/08}
-
-算法引擎实习生. Panther 推理引擎 GPU 后端
+\datedsubsection{\textbf{Bytedance}\quad AI Lab. 算法引擎实习生.}{21/02 - 21/08}
 
 \begin{itemize}
   \item 开发定制 TransformerDecoder 算子，同时编写对应单元测试、图匹配脚本
@@ -222,17 +239,11 @@ AscendCL/CUDA. \href{https://wu-kan.cn/21/03/14/HPL-AI/}{本科毕业设计}
         \end{itemize}
 \end{itemize}
 
-\datedsubsection{\textbf{中山大学}\quad 国家超级计算广州中心}{20/3 - 21/06}
-
-队长. \href{https://scc.sysu.tech}{中山大学超算队}
+\datedsubsection{\textbf{中山大学}. \href{https://scc.sysu.tech}{中山大学超算队}. 队长.}{20/3 - 21/06}
 
 \begin{itemize}
-  \item 在 ASC 决赛中
-        \begin{itemize}
-          \item 调整主板接线实现激进功耗控制，\href{https://mp.weixin.qq.com/s?__biz=MzI5NzUxMDAxOQ==&mid=2247486028&idx=1&sn=08b70942a6e7b0f8e4cd42a98789f4fe}{在三千瓦功耗限制下打破
+  \item 在 ASC 决赛中提出调整主板接线实现激进功耗控制，\href{https://mp.weixin.qq.com/s?__biz=MzI5NzUxMDAxOQ==&mid=2247486028&idx=1&sn=08b70942a6e7b0f8e4cd42a98789f4fe}{在三千瓦功耗限制下打破
                   Linpack 纪录并提升57\%}
-          \item \href{https://wu-kan.cn/21/05/11/\%E9\%87\%8F\%E5\%AD\%90\%E7\%BA\%BF\%E8\%B7\%AF\%E6\%A8\%A1\%E6\%8B\%9F\%E5\%99\%A8QuEST\%E5\%9C\%A8\%E5\%A4\%9AGPU\%E5\%B9\%B3\%E5\%8F\%B0\%E4\%B8\%8A\%E7\%9A\%84\%E6\%80\%A7\%E8\%83\%BD\%E4\%BC\%98\%E5\%8C\%96/}{负责量子线路模拟器赛题QuEST在多GPU平台上的性能优化}
-        \end{itemize}
   \item 在队内定期开展\href{https://scc.sysu.tech/Talks/}{技术分享}，在国内所有超算相关竞赛获前三名，受邀
         IPCC 赛前讲座
         \begin{itemize}
