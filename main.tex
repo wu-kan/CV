@@ -80,7 +80,7 @@
 \datedsubsection{\textbf{Sun Yat-sen University} \quad B.E. \textperiodcentered\ Ph.D. \quad in Computer Science}{2017/09 - 2026/06 (expected)}
 
 \begin{itemize}
-  \item Supervised by \href{https://cse.sysu.edu.cn/content/2483}{Y. Lu}, \href{https://cse.sysu.edu.cn/content/5592}{X. Zhang}, interested in \textbf{gpgpu architecture} and \textbf{compiler}
+  \item Supervised by \href{https://cse.sysu.edu.cn/teacher/LuYutong}{Y. Lu}, \href{https://cse.sysu.edu.cn/teacher/ZhangXianwei}{X. Zhang}, interested in \textbf{gpgpu architecture} \& \textbf{compiler}. 
 \end{itemize}
 
 \section{Research}
@@ -91,16 +91,15 @@
 
 \textbf{\large GoPTX: Fine-grained \underline{G}PU Kernel Fusi\underline{o}n by \underline{PTX}-level Instruction Weaving}
 
-\underline{K. Wu}, Z. Lin, X. Meng, Z. Zheng, W. Pan, X. Zhang, Y. Lu. \href{https://github.com/wu-kan/GoPTX}{GitHub}. DAC'25
+\underline{K. Wu}, Z. Lin, X. Meng, Z. Zheng, W. Pan, X. Zhang, Y. Lu. DAC'25. \href{https://xianweiz.github.io/doc/papers/goptx_dac25.pdf}{Paper}. \href{https://github.com/wu-kan/GoPTX}{GitHub}
 
 \textbf{\large SMILE: LLC-based \underline{S}hared \underline{M}emory Expansion to \underline{I}mprove GPU Thread \underline{L}evel Parall\underline{e}lism}
 
-T. Guo, X. Huang, \underline{K. Wu}, X. Zhang, N. Xiao. \href{https://www.dac.com/Conference/24-Speaker-Resource-Page}{DAC'24}
+T. Guo, X. Huang, \underline{K. Wu}, X. Zhang, N. Xiao. DAC'24. \href{https://dl.acm.org/doi/10.1145/3649329.3655906}{Paper}
 
 \textbf{\large RollBin: Reducing code-size via loop rerolling at binary level}
 
-T. Ge, Z. Mo, \underline{K. Wu}, X. Zhang, Y. Lu.
-\href{https://pldi22/sigplan.org/details/LCTES-22/9/RollBin-Reducing-code-size-via-loop-rerolling-at-binary-level}{LCTES'22}
+T. Ge, Z. Mo, \underline{K. Wu}, X. Zhang, Y. Lu. LCTES'22. \href{https://dl.acm.org/doi/10.1145/3519941.3535072}{Paper}
 
 \textbf{\large Implementation and optimization of HPL-AI for domestic heterogeneous processors}
 
@@ -110,10 +109,13 @@ AscendCL/CUDA. \href{https://wu-kan.cn/2021/03/14/HPL-AI/}{Outstanding Undergrad
 
 \datedsubsection{\textbf{Sun Yat-sen University}, School of Computer Science and Engineering}{2021/02 - 2021/08}
 
-Teach Assistant, \href{https://cse.sysu.edu.cn/content/5366}{The first year Von Neumann class for System and Architecture}
+Teach Assistant, \href{https://cse.sysu.edu.cn/article/2314}{The first year Von Neumann class for System and Architecture}
 
 \begin{itemize}
   \item DCS290 - Compilation Principle, 2022 Spring. \href{https://yatcc-ai.com/}{YatCC}.
+    \begin{itemize}
+        \item The first course project with LLM-based compile optimization in the world
+    \end{itemize}
   \item DCS3013 - Computer Architecture, 2021 Fall. \href{https://yatcpu.sysu.tech/}{YatCPU}.
 \end{itemize}
 
@@ -152,7 +154,7 @@ Teach Assistant, \href{https://cse.sysu.edu.cn/content/5366}{The first year Von 
 \datedsubsection{\textbf{中山大学} \quad 学士 \textperiodcentered\ 博士 \quad 计算机科学与技术}{2017/09 - 2026/06（预期）}
 
 \begin{itemize}
-  \item 导师：\href{https://cse.sysu.edu.cn/content/2483}{卢宇彤}，\href{https://cse.sysu.edu.cn/content/5592}{张献伟}，研究方向：\textbf{GPU体系结构}/\textbf{编译}
+  \item 导师：\href{https://cse.sysu.edu.cn/teacher/LuYutong}{卢宇彤}，\href{https://cse.sysu.edu.cn/teacher/ZhangXianwei}{张献伟}，研究方向：\textbf{GPU体系结构}\&\textbf{编译}. Through heterogeneity, unity.
 \end{itemize}
 
 \section{科研}
@@ -169,16 +171,21 @@ Teach Assistant, \href{https://cse.sysu.edu.cn/content/5366}{The first year Von 
 
 \textbf{\large GoPTX: Fine-grained \underline{G}PU Kernel Fusi\underline{o}n by \underline{PTX}-level Instruction Weaving}
 
-\underline{K. Wu}, Z. Lin, X. Meng, Z. Zheng, W. Pan, X. Zhang, Y. Lu. \href{https://github.com/wu-kan/GoPTX}{GitHub}. DAC'25 (CCF-A)
+\underline{K. Wu}, Z. Lin, X. Meng, Z. Zheng, W. Pan, X. Zhang, Y. Lu. DAC'25 (CCF-A). \href{https://xianweiz.github.io/doc/papers/goptx_dac25.pdf}{Paper}. \href{https://github.com/wu-kan/GoPTX}{GitHub}
 
 \begin{itemize}
-    \item 对并发任务 PTX 指令交织，平均加速比 11.2\% 最大 23\%，ILP 最大提升 50\%
-    \item 控制流图归并算法、延迟模型、指令交织算法、自适应切片算法与 PTX 汇编器，可处理死锁等情况
+    \item 对并发任务指令交织掩盖「气泡」，平均加速比 11.2\% 最大 23\%，ILP 最大提升 50\%
+        \begin{itemize}
+            \item 通过手写 PTX 汇编器，在汇编层面处理复杂的指令流（if, for, while, continue, break, \dots）
+            \item 提出控制流图归并算法用于合并两个异构的任务，为指令交织创造空间；可处理死锁等情况
+            \item 基于 microbenchmark 创建指令延迟模型，随后用于指令交织
+            \item 自适应切片算法，进一步增加气泡掩盖的机会
+        \end{itemize}
 \end{itemize}
 
 \textbf{\large SMILE: LLC-based \underline{S}hared \underline{M}emory Expansion to \underline{I}mprove GPU Thread \underline{L}evel Parall\underline{e}lism}
 
-T. Guo, X. Huang, \underline{K. Wu}, X. Zhang, N. Xiao. \href{https://www.dac.com/Conference/24-Speaker-Resource-Page}{DAC'24 (CCF-A)}
+T. Guo, X. Huang, \underline{K. Wu}, X. Zhang, N. Xiao. DAC'24 (CCF-A). \href{https://dl.acm.org/doi/10.1145/3649329.3655906}{Paper}
 
 \begin{itemize}
   \item 提出硬件架构创新 SMILE，使用 Last Level Cache 增加 SMEM 大小与线程并行度；前期负责初版设计
@@ -186,20 +193,18 @@ T. Guo, X. Huang, \underline{K. Wu}, X. Zhang, N. Xiao. \href{https://www.dac.co
 
 \textbf{\large RollBin: Reducing code-size via loop rerolling at binary level}
 
-T. Ge, Z. Mo, \underline{K. Wu}, X. Zhang, Y. Lu.
-\href{https://pldi22/sigplan.org/details/LCTES-22/9/RollBin-Reducing-code-size-via-loop-rerolling-at-binary-level}{LCTES'22 (CCF-B)}
+T. Ge, Z. Mo, \underline{K. Wu}, X. Zhang, Y. Lu. LCTES'22 (CCF-B). \href{https://dl.acm.org/doi/10.1145/3519941.3535072}{Paper}
 
 \hspace{.2cm}
 
 \textbf{\large 面向新一代神威超级计算机的Vision Transformer模型训练过程优化}
 
-SACA（Sunway Accelerate Computing Architecture）.
+SACA (Sunway Accelerate Computing Architecture).
 \href{https://sysu-scc.feishu.cn/file/boxcnsEncoYfL79hceRLrAP11Jg}{神威杯参赛作品}
 
 \begin{itemize}
   \item 在新一代神威超算上优化 SWPyTorch 使用 256 节点训练 ViT 模型的过程
   \item 前向过程加速上千倍，反向与权重更新过程加速上百倍
-  \item 算例规模下六核组 SGEMM 峰值性能超过 8.2 TFlops，达到理论性能的 59.24\%
 \end{itemize}
 
 \textbf{\large 面向国产异构处理器的HPL-AI基准实现及优化}
@@ -208,7 +213,7 @@ AscendCL/CUDA. \href{https://wu-kan.cn/2021/03/14/HPL-AI/}{中山大学优秀本
 
 \begin{itemize}
   \item 首个开源的多节点 HPL-AI 基准实现，基于 hpl-2.3 并达到 2.59x 加速比
-  \item 使用 NPU（Ascend 910A）的半精度算力加速 Linpack 求解，然后通过数值迭代提升精度
+  \item 使用 NPU (Ascend 910A)的半精度算力加速 Linpack 求解，然后通过数值迭代提升精度
   \item 在X86、ARM、GPU、NPU等多种环境上通过正确性、可扩展性验证
 \end{itemize}
 
@@ -217,11 +222,14 @@ AscendCL/CUDA. \href{https://wu-kan.cn/2021/03/14/HPL-AI/}{中山大学优秀本
 
 \hspace{.2cm}
 
-\datedsubsection{\textbf{中山大学}. 计算机学院首届\href{https://cse.sysu.edu.cn/content/5366}{「冯」班}
+\datedsubsection{\textbf{中山大学}. 计算机学院首届\href{https://cse.sysu.edu.cn/article/2314}{「冯」班}
 助教. 编译原理, 组成原理}{2021/09 - 2022/06}
 
 \begin{itemize}
   \item 作为核心成员发起并参与编译原理实验 \href{https://yatcc-ai.com/}{YatCC}、组成原理实验 \href{https://yatcpu.sysu.tech/}{YatCPU}，成为学院\href{https://mp.weixin.qq.com/s?__biz=MzAwNzczODEzMw==&mid=2653124398&idx=1&sn=b2d2f2b4aa4ca8fd8937385aa0da45d7}{标杆课程}
+    \begin{itemize}
+        \item 全世界首个引入大语言模型源码优化的编译实验课程，并产出\href{https://arxiv.org/abs/2503.19449}{相关学术论文}
+    \end{itemize}
 \end{itemize}
 
 \datedsubsection{\textbf{Bytedance} AI Lab. 算法引擎实习生.}{2021/02 - 2021/08}
@@ -240,9 +248,8 @@ AscendCL/CUDA. \href{https://wu-kan.cn/2021/03/14/HPL-AI/}{中山大学优秀本
 \datedsubsection{\textbf{中山大学}. \href{https://scc.sysu.tech}{中山大学超算队}. 队长.}{2020/03 - 2021/06}
 
 \begin{itemize}
-  \item 在 ASC 决赛中提出调整主板接线实现激进功耗控制，\href{https://mp.weixin.qq.com/s?__biz=MzI5NzUxMDAxOQ==&mid=2247486028&idx=1&sn=08b70942a6e7b0f8e4cd42a98789f4fe}{在三千瓦功耗限制下打破
-                  Linpack 纪录并提升57\%}
-  \item 在队内定期开展\href{https://scc.sysu.tech/Talks/}{技术分享}，在国内所有超算相关竞赛获前三名，受邀赛前讲座直播
+  \item 在 \href{https://wu-kan.cn/21/05/19/\%E6\%88\%91\%E7\%9A\%84ASC\%E5\%86\%B3\%E8\%B5\%9B\%E5\%A4\%8D\%E7\%9B\%98-\%E5\%86\%92\%E9\%99\%A9-\%E5\%A4\%B1\%E8\%AF\%AF\%E4\%B8\%8E\%E7\%BF\%BB\%E8\%BD\%A6/}{ASC 决赛}中基于体系结构理解改装机器，\href{https://mp.weixin.qq.com/s?__biz=MzI5NzUxMDAxOQ==&mid=2247486028&idx=1&sn=08b70942a6e7b0f8e4cd42a98789f4fe}{在三千瓦功耗限制下打破性能纪录并提升57\%}
+  \item 在队内定期开展\href{https://scc.sysu.tech/Talks/}{技术分享}，在国内所有超算相关竞赛获前三名，受邀讲座且三期直播与回放人数均达 1000+
         \begin{itemize}
           \item \href{https://sysu-scc.feishu.cn/file/boxcnyn3xp9JJz7rNyjUtUAhHLc}{超算竞赛备赛指南}，\href{https://sysu-scc.feishu.cn/file/boxcnjtWoYlkvSF4pF4grCwudFr}{超算基本原理与方法论}，\href{https://sysu-scc.feishu.cn/file/boxcnQcRimOByBFREJEc5lgtgXc}{现代处理器优化概论}
         \end{itemize}
