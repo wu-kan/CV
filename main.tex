@@ -1,20 +1,26 @@
 \documentclass[
-    % fontset=ubuntu
-    fontset=fandol
+    scheme=plain
 ]{ctexart}
 
 % customize section/subsection title
 \usepackage{titlesec}
 
 % set margin
-\usepackage[margin=0.75in]{geometry}
+\usepackage[margin=.7in]{geometry}
 
 % define some colors
 \usepackage[x11names]{xcolor}
 
 \usepackage[colorlinks=true, urlcolor=Red4]{hyperref}
 
-\pagestyle{plain}
+\setmainfont{Latin Modern Mono}
+
+\setCJKmainfont[
+    BoldFont=FandolSong,
+    BoldFeatures = {FakeBold=2}
+]{FandolFang}
+
+\linespread{1.25}
 
 % do not need indent in resume
 \setlength{\parindent}{0pt}
@@ -37,7 +43,7 @@
 
 % similar above
 \titleformat{\subsection}
-{\normalsize\raggedright}
+{\normalsize\large\raggedright}
 {}{0em}{}
 \titlespacing*{\subsection}{0cm}{*1.6}{0.0ex}
 
@@ -53,11 +59,9 @@
 }
 \makeatother
 
-\begin{document}
-
-\tt
-
 \title{Kan Wu \textperiodcentered\ 吴坎}
+
+\begin{document}
 
 \maketitle
 
@@ -77,7 +81,7 @@
 
 \section{Education}
 
-\datedsubsection{\textbf{Sun Yat-sen University} \quad B.E. \textperiodcentered\ Ph.D. \quad in Computer Science}{2017/09 - 2026/06 (expected)}
+\datedsubsection{\textbf{Sun Yat-sen University}, B.E.\textperiodcentered Ph.D., Computer Science}{2017/09 - 2026/06 (expected)}
 
 \begin{itemize}
   \item Supervised by \href{https://cse.sysu.edu.cn/teacher/LuYutong}{Y. Lu}, \href{https://cse.sysu.edu.cn/teacher/ZhangXianwei}{X. Zhang}, interested in \textbf{gpgpu architecture} \& \textbf{compiler}. 
@@ -85,33 +89,37 @@
 
 \section{Research}
 
-\textbf{VecTrans: Enhancing Compiler Auto-\underline{Vec}torization through LLM-Assisted Code \underline{Trans}formations}
-
-Z. Zheng, \underline{K. Wu}, L. Cheng, L. Li, R. Rocha, et al. CGO'2026 (submitting). \href{https://arxiv.org/abs/2503.19449}{Paper}
-
-\textbf{\large XFuse: PT\underline{X} level Code \underline{Fus}ion for GPU Concurrent Kernel Ex\underline{e}cution}
+\datedsubsection{\textbf{XFuse: PT\underline{X} level Code \underline{Fus}ion for GPU Concurrent Kernel Ex\underline{e}cution}}{}
 
 \underline{K. Wu}, X. Zhang, Y. Lu. TACO (submitting)
 
-\textbf{\large GoPTX: Fine-grained \underline{G}PU Kernel Fusi\underline{o}n by \underline{PTX}-level Instruction Weaving}
+\datedsubsection{\textbf{GoPTX: Fine-grained \underline{G}PU Kernel Fusi\underline{o}n by \underline{PTX}-level Instruction Flow Weaving}}{}
 
-\underline{K. Wu}, Z. Lin, X. Meng, Z. Zheng, W. Pan, X. Zhang, Y. Lu. DAC'25. \href{https://xianweiz.github.io/doc/papers/goptx_dac25.pdf}{Paper}. \href{https://github.com/wu-kan/GoPTX}{GitHub}
+\underline{K. Wu}, Z. Lin, X. Meng, Z. Zheng, W. Pan, X. Zhang, Y. Lu. DAC'25. \href{https://wu-kan.cn/2025/06/25/DAC25-GoPTX/}{Resource Page}
 
-\textbf{\large SMILE: LLC-based \underline{S}hared \underline{M}emory Expansion to \underline{I}mprove GPU Thread \underline{L}evel Parall\underline{e}lism}
+\datedsubsection{\textbf{VecTrans: Enhancing Auto-\underline{Vec}torization through LLM-Assisted Code \underline{Trans}formations}}{}
+
+Z. Zheng, \underline{K. Wu}, L. Cheng, L. Li, R. Rocha, et al. CGO'2026 (submitting). \href{https://arxiv.org/abs/2503.19449}{Paper}
+
+\datedsubsection{\textbf{SMILE: LLC-based \underline{S}hared \underline{M}emory Expansion to \underline{I}mprove GPU Thread \underline{L}evel Parall\underline{e}lism}}{}
 
 T. Guo, X. Huang, \underline{K. Wu}, X. Zhang, N. Xiao. DAC'24. \href{https://dl.acm.org/doi/10.1145/3649329.3655906}{Paper}
 
-\textbf{\large RollBin: Reducing code-size via loop rerolling at binary level}
+\datedsubsection{\textbf{RollBin: Reducing code-size via loop rerolling at binary level}}{}
 
 T. Ge, Z. Mo, \underline{K. Wu}, X. Zhang, Y. Lu. LCTES'22. \href{https://dl.acm.org/doi/10.1145/3519941.3535072}{Paper}
 
-\textbf{\large Implementation and optimization of HPL-AI for domestic heterogeneous processors}
+\datedsubsection{\textbf{Implementation and optimization of HPL-AI for domestic heterogeneous processors}}{}
 
 AscendCL/CUDA. \href{https://wu-kan.cn/2021/03/14/HPL-AI/}{Outstanding Undergraduate Thesis}
 
 \section{Experience}
 
-\datedsubsection{\textbf{Sun Yat-sen University}, School of Computer Science and Engineering}{2021/02 - 2021/08}
+\datedsubsection{\textbf{WeChat}, HPC Team, Research Intern}{2025/10 (expected) - 2026/02 (expected)}
+
+\datedsubsection{\textbf{Moonshot AI}, Mooncake Team, AI Infra Intern}{2025/06 - 2025/09 (expected)}
+
+\datedsubsection{\textbf{Sun Yat-sen University}, School of Computer Science}{2021/02 - 2021/08}
 
 Teach Assistant, \href{https://cse.sysu.edu.cn/article/2314}{The first year Von Neumann class for System and Architecture}
 
@@ -129,9 +137,9 @@ Teach Assistant, \href{https://cse.sysu.edu.cn/article/2314}{The first year Von 
 
 \section{Honor}
 
-\datedsubsection{\href{https://mp.weixin.qq.com/s/AJKqG2KvLl6n_88_8IzsYw}{\texttt{CCF Elite Collegiate Award(98 in China, 1 in SYSU)}}, China Computer Federation (CCF)}{2021/09}
+\datedsubsection{\href{https://mp.weixin.qq.com/s/AJKqG2KvLl6n_88_8IzsYw}{\texttt{CCF Elite Collegiate Award (98 in China, 1 in SYSU)}}}{2021/09}
 \datedsubsection{\href{https://wu-kan.cn/21/03/14/HPL-AI/}{\texttt{Outstanding Undergraduate Thesis Award}}, Sun Yat-sen University}{2021/05}
-\datedsubsection{\href{https://wu-kan.cn/21/05/19/\%E6\%88\%91\%E7\%9A\%84ASC\%E5\%86\%B3\%E8\%B5\%9B\%E5\%A4\%8D\%E7\%9B\%98-\%E5\%86\%92\%E9\%99\%A9-\%E5\%A4\%B1\%E8\%AF\%AF\%E4\%B8\%8E\%E7\%BF\%BB\%E8\%BD\%A6/}{\texttt{Highest Linpack Award \& First Prize(3/400+)}}, ASC Student Supercomputer Challenge}{2021/05}
+\datedsubsection{\href{https://wu-kan.cn/21/05/19/\%E6\%88\%91\%E7\%9A\%84ASC\%E5\%86\%B3\%E8\%B5\%9B\%E5\%A4\%8D\%E7\%9B\%98-\%E5\%86\%92\%E9\%99\%A9-\%E5\%A4\%B1\%E8\%AF\%AF\%E4\%B8\%8E\%E7\%BF\%BB\%E8\%BD\%A6/}{\texttt{Highest Linpack Award \& First Prize (3/400+)}}, ASC Supercomputer Challenge}{2021/05}
 \datedsubsection{First-Prize Scholarship (Top 5\%), Sun Yat-sen University}{2020/10}
 \datedsubsection{\href{https://wu-kan.cn/2019/12/16/\%E7\%AC\%AC\%E5\%8D\%81\%E5\%85\%AB\%E6\%AC\%A1CCF\%E8\%AE\%A1\%E7\%AE\%97\%E6\%9C\%BA\%E8\%BD\%AF\%E4\%BB\%B6\%E8\%83\%BD\%E5\%8A\%9B\%E8\%AE\%A4\%E8\%AF\%81/}{\texttt{Top 0.05\% (6/11395)}}, CCF Certified Software Professional}{2019/12}
 
@@ -158,22 +166,12 @@ Teach Assistant, \href{https://cse.sysu.edu.cn/article/2314}{The first year Von 
 \datedsubsection{\textbf{中山大学} \quad 学士 \textperiodcentered\ 博士 \quad 计算机科学与技术}{2017/09 - 2026/06（预期）}
 
 \begin{itemize}
-  \item 导师：\href{https://cse.sysu.edu.cn/teacher/LuYutong}{卢宇彤}，\href{https://cse.sysu.edu.cn/teacher/ZhangXianwei}{张献伟}，研究方向：\textbf{GPU体系结构}\&\textbf{编译}. Through heterogeneity, unity.
+  \item 导师：\href{https://cse.sysu.edu.cn/teacher/LuYutong}{卢宇彤}，\href{https://cse.sysu.edu.cn/teacher/ZhangXianwei}{张献伟}，研究方向：GPU体系结构 \& 编译. Through heterogeneity, unity.
 \end{itemize}
 
 \section{代表作}
 
-\hspace{.2cm}
-
-\textbf{VecTrans: Enhancing Compiler Auto-\underline{Vec}torization through LLM-Assisted Code \underline{Trans}formations}
-
-Z. Zheng, \underline{K. Wu}, L. Cheng, L. Li, R. Rocha, et al. CGO'2026 (CCF-B, submitting). \href{https://arxiv.org/abs/2503.19449}{Paper}
-
-\begin{itemize}
-    \item 使用大语言模型辅助编译器自动向量化；参与论文写作与相关技术讨论与指导
-\end{itemize}
-
-\textbf{\large XFuse: PT\underline{X} level Code \underline{Fus}ion for GPU Concurrent Kernel Ex\underline{e}cution}
+\datedsubsection{\textbf{XFuse: PT\underline{X} level Code \underline{Fus}ion for GPU Concurrent Kernel Ex\underline{e}cution}}{}
 
 \underline{K. Wu}, X. Zhang, Y. Lu. TACO (CCF-A, submitting)
 
@@ -181,21 +179,29 @@ Z. Zheng, \underline{K. Wu}, L. Cheng, L. Li, R. Rocha, et al. CGO'2026 (CCF-B, 
     \item GoPTX 的扩展工作，增加多种调优参数与内核匹配策略，总体性能提升至 15.8\%
 \end{itemize}
 
-\textbf{\large GoPTX: Fine-grained \underline{G}PU Kernel Fusi\underline{o}n by \underline{PTX}-level Instruction Weaving}
+\datedsubsection{\textbf{GoPTX: Fine-grained \underline{G}PU Kernel Fusi\underline{o}n by \underline{PTX}-level Instruction Weaving}}{}
 
-\underline{K. Wu}, Z. Lin, X. Meng, Z. Zheng, W. Pan, X. Zhang, Y. Lu. DAC'25 (CCF-A). \href{https://xianweiz.github.io/doc/papers/goptx_dac25.pdf}{Paper}. \href{https://github.com/wu-kan/GoPTX}{GitHub}
+\underline{K. Wu}, Z. Lin, X. Meng, Z. Zheng, W. Pan, X. Zhang, Y. Lu. DAC'25. \href{https://wu-kan.cn/2025/06/25/DAC25-GoPTX/}{Resource Page}
 
 \begin{itemize}
-    \item 对并发任务指令交织掩盖「气泡」，平均加速比 11.2\% 最大 23\%，ILP 最大提升 50\%
+    \item 基于 PTX 层级指令交织，实现自动算子水平融合，并进行细粒度指令调度优化 ILP 与资源利用率
         \begin{itemize}
-            \item 通过手写 PTX 汇编器，在汇编层级处理复杂的指令流（if, for, while, continue, break, \dots）
-            \item 提出控制流图归并算法用于合并两个异构任务，为指令交织创造空间；可处理死锁等情况
-            \item 基于 microbenchmark 创建指令延迟模型，随后用于指令交织
+            \item 提出控制流图归并算法，基于自实现汇编器，处理复杂指令流（if, for, break, \dots）；可处理死锁
+            \item 基于 microbenchmark 创建指令延迟模型，优化指令交织
             \item 自适应切片算法，进一步增加气泡掩盖机会
+            \item 平均加速比 11.2\% 最大 23\%，ILP 最大提升 50\%
         \end{itemize}
 \end{itemize}
 
-\textbf{\large SMILE: LLC-based \underline{S}hared \underline{M}emory Expansion to \underline{I}mprove GPU Thread \underline{L}evel Parall\underline{e}lism}
+\datedsubsection{\textbf{VecTrans: Enhancing Auto-\underline{Vec}torization through LLM-Assisted Code \underline{Trans}formations}}{}
+
+Z. Zheng, \underline{K. Wu}, L. Cheng, L. Li, R. Rocha, et al. CGO'2026 (CCF-B, submitting). \href{https://arxiv.org/abs/2503.19449}{Paper}
+
+\begin{itemize}
+    \item 使用大语言模型辅助编译器自动向量化；参与论文写作与相关技术指导与讨论
+\end{itemize}
+
+\datedsubsection{\textbf{SMILE: LLC-based \underline{S}hared \underline{M}emory Expansion to \underline{I}mprove GPU Thread \underline{L}evel Parall\underline{e}lism}}{}
 
 T. Guo, X. Huang, \underline{K. Wu}, X. Zhang, N. Xiao. DAC'24 (CCF-A). \href{https://dl.acm.org/doi/10.1145/3649329.3655906}{Paper}
 
@@ -203,11 +209,11 @@ T. Guo, X. Huang, \underline{K. Wu}, X. Zhang, N. Xiao. DAC'24 (CCF-A). \href{ht
   \item 提出硬件架构创新 SMILE，使用 Last Level Cache 增加 SMEM 大小与线程并行度；前期负责初版设计
 \end{itemize}
 
-\textbf{\large RollBin: Reducing code-size via loop rerolling at binary level}
+\datedsubsection{\textbf{RollBin: Reducing code-size via loop rerolling at binary level}}{}
 
 T. Ge, Z. Mo, \underline{K. Wu}, X. Zhang, Y. Lu. LCTES'22 (CCF-B). \href{https://dl.acm.org/doi/10.1145/3519941.3535072}{Paper}
 
-\textbf{\large 面向新一代神威超级计算机的Vision Transformer模型训练过程优化}
+\datedsubsection{\textbf{面向新一代神威超级计算机的Vision Transformer模型训练过程优化}}{}
 
 SACA (Sunway Accelerate Computing Architecture).
 \href{https://sysu-scc.feishu.cn/file/boxcnsEncoYfL79hceRLrAP11Jg}{神威杯参赛作品}
@@ -217,7 +223,7 @@ SACA (Sunway Accelerate Computing Architecture).
   \item 前向过程加速上千倍，反向与权重更新过程加速上百倍
 \end{itemize}
 
-\textbf{\large 面向国产异构处理器的HPL-AI基准实现及优化}
+\datedsubsection{\textbf{面向国产异构处理器的HPL-AI基准实现及优化}}{}
 
 AscendCL/CUDA. \href{https://wu-kan.cn/2021/03/14/HPL-AI/}{中山大学优秀本科毕业论文}
 
@@ -230,10 +236,12 @@ AscendCL/CUDA. \href{https://wu-kan.cn/2021/03/14/HPL-AI/}{中山大学优秀本
 \section{经历}
 \label{sec:经历}
 
-\hspace{.2cm}
+\datedsubsection{\textbf{WeChat}, HPC Team, Research Intern}{2025-10 (预期) - 2026-02 (预期)}
+
+\datedsubsection{\textbf{Moonshot AI}, Mooncake Team, AI Infra Intern}{2025/06 - 2025-09 (预期)}
 
 \datedsubsection{\textbf{中山大学}. 计算机学院首届\href{https://cse.sysu.edu.cn/article/2314}{「冯」班}
-助教. 编译原理, 组成原理}{2021/09 - 2022/06}
+助教}{2021/09 - 2022/06}
 
 \begin{itemize}
   \item 作为核心成员发起并参与编译原理实验 \href{https://yatcc-ai.com/}{YatCC}、组成原理实验 \href{https://yatcpu.sysu.tech/}{YatCPU}，成为学院\href{https://mp.weixin.qq.com/s?__biz=MzAwNzczODEzMw==&mid=2653124398&idx=1&sn=b2d2f2b4aa4ca8fd8937385aa0da45d7}{标杆课程}
@@ -242,7 +250,7 @@ AscendCL/CUDA. \href{https://wu-kan.cn/2021/03/14/HPL-AI/}{中山大学优秀本
     \end{itemize}
 \end{itemize}
 
-\datedsubsection{\textbf{Bytedance} AI Lab. 算法引擎实习生.}{2021/02 - 2021/08}
+\datedsubsection{\textbf{Bytedance} AI Lab. Machine Learning Engineer (Intern)}{2021/02 - 2021/08}
 
 \begin{itemize}
   \item 开发定制 TransformerDecoder 算子，同时编写对应单元测试、图匹配脚本
