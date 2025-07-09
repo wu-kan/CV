@@ -6,7 +6,7 @@
 \usepackage{titlesec}
 
 % set margin
-\usepackage[margin=.7in]{geometry}
+\usepackage[margin=.68in]{geometry}
 
 % define some colors
 \usepackage[x11names]{xcolor}
@@ -24,9 +24,6 @@
 ]{FandolSong}
 
 \linespread{1.25}
-
-% do not need indent in resume
-\setlength{\parindent}{0pt}
 
 \titleformat{\section}
 % format: to be applied to the whole title -- label and text
@@ -56,21 +53,18 @@
 
 \makeatletter
 \renewcommand\maketitle{
- \begin{center}
-  {\LARGE\textbf{\@title}}
-
-  \texttt{
-      \href{https://resume.wu-kan.cn}{LatestCV}
-      \textperiodcentered\
-      \url{https://wu-kan.cn}
-      \textperiodcentered\
-      \href{https://github.com/wu-kan}{github.com/wu-kan}
-      \textperiodcentered\
-      \href{mailto:cv@wu-kan.cn}{cv@wu-kan.cn}
-      \textperiodcentered\
-      {wukan0621 (wechat)}
-  }
- \end{center}
+\begin{center}
+  {\LARGE\textbf{\@title}}\\
+  \href{https://resume.wu-kan.cn}{LatestCV}
+  \textperiodcentered\
+  \url{https://wu-kan.cn}
+  \textperiodcentered\
+  \url{https://github.com/wu-kan}
+  \textperiodcentered\
+  \href{mailto:cv@wu-kan.cn}{cv@wu-kan.cn}
+  \textperiodcentered\
+  {wukan0621 (wechat)}
+\end{center}
 }
 \makeatother
 
@@ -98,7 +92,7 @@
 
 \underline{K. Wu}, Z. Lin, X. Meng, Z. Zheng, W. Pan, X. Zhang, Y. Lu. DAC'25. \href{https://wu-kan.cn/2025/06/25/DAC25-GoPTX/}{Resource Page}
 
-\datedsubsection{\textbf{VecTrans: Enhancing Compiler Auto-\underline{Vec}torization via LLM-Assisted Code \underline{Trans}formations}}{}
+\datedsubsection{\textbf{VecTrans: Enhancing Compiler Auto-\underline{Vec}torization through LLM-Assisted Code \underline{Trans}formations}}{}
 
 Z. Zheng, \underline{K. Wu}, L. Cheng, L. Li, R. Rocha, et al. CGO'26 (submitting). \href{https://arxiv.org/abs/2503.19449}{Paper}
 
@@ -116,7 +110,7 @@ AscendCL/CUDA. \href{https://wu-kan.cn/2021/03/14/HPL-AI/}{Outstanding Undergrad
 
 \section{Experience}
 
-\datedsubsection{\textbf{WeChat}, HPC Team, Research Intern}{2025/10 (expected) - 2026/02 (expected)}
+\datedsubsection{\textbf{WeChat}, HPC Team, Research Intern, \href{https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ==&mid=2650961684&idx=1&sn=45c1e4c4da50169027a689a8c27effb5}{Project Up}}{2025/10 (expected) - 2026/02 (expected)}
 
 \datedsubsection{\textbf{Moonshot AI}, Mooncake Team, AI Infra Intern}{2025/06 - 2025/09 (expected)}
 
@@ -127,7 +121,7 @@ Teach Assistant, \href{https://cse.sysu.edu.cn/article/2314}{The first year Von 
 \begin{itemize}
   \item DCS290 - Compilation Principle, 2022 Spring. \href{https://yatcc-ai.com/}{YatCC}.
     \begin{itemize}
-        \item The first compile course project with LLM-based optimization in the world
+        \item The first LLM-powered compile course project in the world
     \end{itemize}
   \item DCS3013 - Computer Architecture, 2021 Fall. \href{https://yatcpu.sysu.tech/}{YatCPU}.
 \end{itemize}
@@ -139,8 +133,8 @@ Teach Assistant, \href{https://cse.sysu.edu.cn/article/2314}{The first year Von 
 \section{Honor}
 
 \datedsubsection{\href{https://mp.weixin.qq.com/s/AJKqG2KvLl6n_88_8IzsYw}{CCF Elite Collegiate Award (98 in China, 1 in SYSU)}}{2021/09}
-\datedsubsection{\href{https://wu-kan.cn/21/03/14/HPL-AI/}{Outstanding Undergraduate Thesis Award}, Sun Yat-sen University}{2021/05}
-\datedsubsection{\href{https://wu-kan.cn/21/05/19/\%E6\%88\%91\%E7\%9A\%84ASC\%E5\%86\%B3\%E8\%B5\%9B\%E5\%A4\%8D\%E7\%9B\%98-\%E5\%86\%92\%E9\%99\%A9-\%E5\%A4\%B1\%E8\%AF\%AF\%E4\%B8\%8E\%E7\%BF\%BB\%E8\%BD\%A6/}{Highest Linpack Award \& First Prize (3/400+)}, ASC Supercomputer Challenge}{2021/05}
+\datedsubsection{\href{https://wu-kan.cn/21/03/14/HPL-AI/}{Outstanding Undergraduate Thesis Award (Top 5\%)}, Sun Yat-sen University}{2021/05}
+\datedsubsection{\href{https://wu-kan.cn/21/05/19/\%E6\%88\%91\%E7\%9A\%84ASC\%E5\%86\%B3\%E8\%B5\%9B\%E5\%A4\%8D\%E7\%9B\%98-\%E5\%86\%92\%E9\%99\%A9-\%E5\%A4\%B1\%E8\%AF\%AF\%E4\%B8\%8E\%E7\%BF\%BB\%E8\%BD\%A6/}{Highest Linpack Award \& First Prize (3/400+)}, ASC Student Supercomputer Challenge}{2021/05}
 \datedsubsection{First-Prize Scholarship (Top 5\%), Sun Yat-sen University}{2020/10}
 \datedsubsection{\href{https://wu-kan.cn/2019/12/16/\%E7\%AC\%AC\%E5\%8D\%81\%E5\%85\%AB\%E6\%AC\%A1CCF\%E8\%AE\%A1\%E7\%AE\%97\%E6\%9C\%BA\%E8\%BD\%AF\%E4\%BB\%B6\%E8\%83\%BD\%E5\%8A\%9B\%E8\%AE\%A4\%E8\%AF\%81/}{Top 0.05\% (6/11395)}, CCF Certified Software Professional}{2019/12}
 
@@ -171,19 +165,19 @@ Teach Assistant, \href{https://cse.sysu.edu.cn/article/2314}{The first year Von 
 \underline{K. Wu}, Z. Lin, X. Meng, Z. Zheng, W. Pan, X. Zhang, Y. Lu. DAC'25. \href{https://wu-kan.cn/2025/06/25/DAC25-GoPTX/}{Resource Page}
 
 \begin{itemize}
-    \item 基于 PTX 层级指令交织，实现自动算子水平融合，并进行细粒度指令调度优化 ILP 与资源利用率
+    \item 基于 PTX 层级指令交织，实现自动算子水平融合，并进行细粒度指令调度优化 ILP 与硬件利用率
     \item 提出控制流图归并算法，基于自实现汇编器，处理复杂指令流（if, for, break, \dots）；可处理死锁
     \item 基于 microbenchmark 创建指令延迟模型，优化指令交织
     \item 引入自适应基本块切片算法，进一步增加气泡掩盖机会
     \item 平均加速比 11.2\% 最大 23\%，ILP 最大提升 50\%
 \end{itemize}
 
-\datedsubsection{\textbf{VecTrans: Enhancing Compiler Auto-\underline{Vec}torization via LLM-Assisted Code \underline{Trans}formations}}{}
+\datedsubsection{\textbf{VecTrans: Enhancing Compiler Auto-\underline{Vec}torization through LLM-Assisted Code \underline{Trans}formations}}{}
 
-Z. Zheng, \underline{K. Wu}, L. Cheng, L. Li, R. Rocha, et al. CGO'2026 (CCF-B, submitting). \href{https://arxiv.org/abs/2503.19449}{Paper}
+Z. Zheng, \underline{K. Wu}, L. Cheng, L. Li, R. Rocha, et al. CGO'26 (CCF-B, submitting). \href{https://arxiv.org/abs/2503.19449}{Paper}
 
 \begin{itemize}
-    \item 使用大语言模型辅助编译器自动向量化；参与论文写作与相关技术指导与讨论
+    \item 使用大语言模型协同编译器自动向量化；参与论文写作与相关技术指导与讨论
 \end{itemize}
 
 \datedsubsection{\textbf{SMILE: LLC-based \underline{S}hared \underline{M}emory Expansion to \underline{I}mprove GPU Thread \underline{L}evel Parall\underline{e}lism}}{}
@@ -219,21 +213,20 @@ AscendCL/CUDA. \href{https://wu-kan.cn/2021/03/14/HPL-AI/}{中山大学优秀本
 \end{itemize}
 
 \section{经历}
-\label{sec:经历}
 
-\datedsubsection{\textbf{WeChat}, HPC Team, Research Intern}{2025/10 (预期) - 2026/02 (预期)}
+\datedsubsection{\textbf{微信}, HPC Team. Research Intern, 青云计划}{2025/10 (预期) - 2026/02 (预期)}
 
-\datedsubsection{\textbf{Moonshot AI}, Mooncake Team, AI Infra Intern}{2025/06 - 2025/09 (预期)}
+\datedsubsection{\textbf{月之暗面}, Mooncake Team. AI Infra Intern}{2025/06 - 2025/09 (预期)}
 
-\datedsubsection{\textbf{中山大学}. 计算机学院首届\href{https://cse.sysu.edu.cn/article/2314}{「冯」班}
+\datedsubsection{\textbf{中山大学}, 计算机学院. 首届\href{https://cse.sysu.edu.cn/article/2314}{「冯」班}
 助教}{2021/09 - 2022/06}
 
 \begin{itemize}
   \item 作为核心成员发起并参与编译原理实验 \href{https://yatcc-ai.com/}{YatCC}、组成原理实验 \href{https://yatcpu.sysu.tech/}{YatCPU}，成为学院\href{https://mp.weixin.qq.com/s?__biz=MzAwNzczODEzMw==&mid=2653124398&idx=1&sn=b2d2f2b4aa4ca8fd8937385aa0da45d7}{标杆课程}
-  \item 全世界首个引入大语言模型源码优化的编译实验课程，并产出相关学术论文
+  \item 全世界首个引入大语言模型协同优化的编译实验，同时产出相关学术论文（\href{https://arxiv.org/abs/2503.19449}{VecTrans} 等）与成果
 \end{itemize}
 
-\datedsubsection{\textbf{Bytedance} AI Lab. Machine Learning Engineer (Intern)}{2021/02 - 2021/08}
+\datedsubsection{\textbf{字节跳动}, AI Lab. Machine Learning Engineer (Intern)}{2021/02 - 2021/08}
 
 \begin{itemize}
   \item 开发定制 TransformerDecoder 算子，同时编写对应单元测试、图匹配脚本
@@ -246,22 +239,20 @@ AscendCL/CUDA. \href{https://wu-kan.cn/2021/03/14/HPL-AI/}{中山大学优秀本
         \end{itemize}
 \end{itemize}
 
-\datedsubsection{\textbf{中山大学}. \href{https://scc.sysu.tech}{中山大学超算队}. 队长.}{2020/03 - 2021/06}
+\datedsubsection{\textbf{中山大学}, \href{https://scc.sysu.tech}{中山大学超算队}. 队长.}{2020/03 - 2021/06}
 
 \begin{itemize}
   \item 在 \href{https://wu-kan.cn/2021/05/19/\%E6\%88\%91\%E7\%9A\%84ASC\%E5\%86\%B3\%E8\%B5\%9B\%E5\%A4\%8D\%E7\%9B\%98-\%E5\%86\%92\%E9\%99\%A9-\%E5\%A4\%B1\%E8\%AF\%AF\%E4\%B8\%8E\%E7\%BF\%BB\%E8\%BD\%A6/}{ASC 决赛}中基于体系结构理解改装机器，\href{https://mp.weixin.qq.com/s?__biz=MzI5NzUxMDAxOQ==&mid=2247486028&idx=1&sn=08b70942a6e7b0f8e4cd42a98789f4fe}{在三千瓦功耗限制下打破性能纪录并提升57\%}
-  \item 在队内定期开展\href{https://scc.sysu.tech/Talks/}{技术分享}，在国内所有超算相关竞赛获前三名，受邀讲座且三期直播与回放人数均达 1000+
+  \item 在队内定期开展\href{https://scc.sysu.tech/Talks/}{技术分享}，在国内所有超算相关竞赛获前三名，受邀讲座且直播与回放人数达 1000+
         \begin{itemize}
           \item \href{https://sysu-scc.feishu.cn/file/boxcnyn3xp9JJz7rNyjUtUAhHLc}{超算竞赛备赛指南}，\href{https://sysu-scc.feishu.cn/file/boxcnjtWoYlkvSF4pF4grCwudFr}{超算基本原理与方法论}，\href{https://sysu-scc.feishu.cn/file/boxcnQcRimOByBFREJEc5lgtgXc}{现代处理器优化概论}
         \end{itemize}
 \end{itemize}
 
 \section{荣誉}
-\label{sec:荣誉}
 
-\datedsubsection{青云计划, 微信}{2025/05}
 \datedsubsection{\href{https://mp.weixin.qq.com/s/ahnG7gJLBu9CMCYjk1_CkQ}{二等奖\& oneAPI技术创新一等奖}，「英特尔杯」并行应用挑战赛（PAC），应用组}{2022/12}
-\datedsubsection{\href{https://mp.weixin.qq.com/s/k7mjyaKs-rGPOcMQTIrKqg}{金奖（1/unknown）}，鲲鹏应用创新大赛，HPC高性能计算赛道}{2022/10}
+\datedsubsection{\href{https://mp.weixin.qq.com/s/k7mjyaKs-rGPOcMQTIrKqg}{金奖（1/unknown）}，鲲鹏应用创新大赛，高性能计算（HPC）赛道}{2022/10}
 \datedsubsection{\href{https://github.com/arcsysu/SYsU-lang-paper}{优秀论文一等奖}，中国高校计算机教育大会（CCEC）}{2022/07}
 \datedsubsection{\href{https://mp.weixin.qq.com/s/L7YX4aaaNAlNCKDYOEhMSA}{二等奖（3/130+）}，ACM中国-国际并行挑战赛（ACM-IPCC）}{2021/11}
 \datedsubsection{\href{https://mp.weixin.qq.com/s/GQsaR_V1NoGzCvbGARMeEA}{二等奖（3/100+）}，「神威杯」并行应用挑战赛（CPC）}{2021/10}
