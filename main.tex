@@ -79,14 +79,14 @@
 \datedsubsection{\textbf{Sun Yat-sen University} \quad B.E. \textperiodcentered\ Ph.D. \quad in Computer Science}{2017/09 - 2026/06 (expected)}
 
 \begin{itemize}
-  \item Supervised by \href{https://cse.sysu.edu.cn/teacher/LuYutong}{Y. Lu}, \href{https://cse.sysu.edu.cn/teacher/ZhangXianwei}{X. Zhang}, interested in gpgpu architecture \& compiler. Through heterogeneity, unity. 
+  \item Supervised by \href{https://cse.sysu.edu.cn/teacher/LuYutong}{Y. Lu}, \href{https://cse.sysu.edu.cn/teacher/ZhangXianwei}{X. Zhang}, exploring gpgpu architecture \& compiler. Through heterogeneity, unity. 
 \end{itemize}
 
 \section{Research}
 
-\datedsubsection{\textbf{XFuse: PT\underline{X} level Code \underline{Fus}ion for GPU Concurrent Kernel Ex\underline{e}cution}}{}
+\datedsubsection{\textbf{XFuse: PT\underline{X}-centric Kernel \underline{Fus}ion for GPU Concurr\underline{e}nt Execution}}{}
 
-\underline{K. Wu}, X. Zhang, Y. Lu. TACO (submitting)
+\underline{K. Wu}, Y. Ouyang, Q. Lin, X. Huang, X. Zhang, Y. Lu. TACO (submitting)
 
 \datedsubsection{\textbf{GoPTX: Fine-grained \underline{G}PU Kernel Fusi\underline{o}n by \underline{PTX}-level Instruction Flow Weaving}}{}
 
@@ -104,13 +104,13 @@ T. Guo, X. Huang, \underline{K. Wu}, X. Zhang, N. Xiao. DAC'24. \href{https://dl
 
 T. Ge, Z. Mo, \underline{K. Wu}, X. Zhang, Y. Lu. LCTES'22. \href{https://dl.acm.org/doi/10.1145/3519941.3535072}{Paper}
 
-\datedsubsection{\textbf{Implementation and optimization of HPL-AI for domestic heterogeneous processors}}{}
+\datedsubsection{\textbf{Implementation and optimization of HPL-AI benchmark for domestic heterogeneous processors}}{}
 
 AscendCL/CUDA. \href{https://wu-kan.cn/2021/03/14/HPL-AI/}{Outstanding Undergraduate Thesis}
 
 \section{Experience}
 
-\datedsubsection{\textbf{WeChat}, HPC Team, Research Intern, \href{https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ==&mid=2650961684&idx=1&sn=45c1e4c4da50169027a689a8c27effb5}{Project Up}}{2025/10 (expected) - 2026/02 (expected)}
+\datedsubsection{\textbf{WeChat}, HPC Team, Research Intern, \href{https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ==&mid=2650961684&idx=1&sn=45c1e4c4da50169027a689a8c27effb5}{Project UP}}{2025/10 (expected) - 2026/02 (expected)}
 
 \datedsubsection{\textbf{Moonshot AI}, Mooncake Team, AI Infra Intern}{2025/06 - 2025/09 (expected)}
 
@@ -152,24 +152,24 @@ Teach Assistant, \href{https://cse.sysu.edu.cn/article/2314}{The first year Von 
 
 \section{代表作}
 
-\datedsubsection{\textbf{XFuse: PT\underline{X} level Code \underline{Fus}ion for GPU Concurrent Kernel Ex\underline{e}cution}}{}
+\datedsubsection{\textbf{XFuse: PT\underline{X}-centric Kernel \underline{Fus}ion for GPU Concurr\underline{e}nt Execution}}{}
 
-\underline{K. Wu}, X. Zhang, Y. Lu. TACO (CCF-A, submitting)
+\underline{K. Wu}, Y. Ouyang, Q. Lin, X. Huang, X. Zhang, Y. Lu. TACO (CCF-A, submitting)
 
 \begin{itemize}
-    \item GoPTX 的扩展工作，进一步探索多种调优技术与内核匹配策略，总体性能提升至 15.8\%
+    \item 扩展 GoPTX，探索多种调优技术，总体性能提升至 14.8\%
+    \item 基于表征分析归纳内核匹配策略，设计编译-运行时工具链辅助用户部署
 \end{itemize}
 
 \datedsubsection{\textbf{GoPTX: Fine-grained \underline{G}PU Kernel Fusi\underline{o}n by \underline{PTX}-level Instruction Flow Weaving}}{}
 
-\underline{K. Wu}, Z. Lin, X. Meng, Z. Zheng, W. Pan, X. Zhang, Y. Lu. DAC'25. \href{https://wu-kan.cn/2025/06/25/DAC25-GoPTX/}{Resource Page}
+\underline{K. Wu}, Z. Lin, X. Meng, Z. Zheng, W. Pan, X. Zhang, Y. Lu. DAC'25 (CCF-A). \href{https://wu-kan.cn/2025/06/25/DAC25-GoPTX/}{Resource Page}
 
 \begin{itemize}
-    \item 基于 PTX 层级指令交织，实现自动算子水平融合，并进行细粒度指令调度优化 ILP 与硬件利用率
+    \item 基于 PTX 层级进行指令交织，实现自动算子水平融合，并细粒度指令调度优化 ILP 与硬件利用率
     \item 提出控制流图归并算法，基于自实现汇编器，处理复杂指令流（if, for, break, \dots）；可处理死锁
-    \item 基于 microbenchmark 创建指令延迟模型，优化指令交织
-    \item 引入自适应基本块切片算法，进一步增加气泡掩盖机会
-    \item 平均加速比 11.2\% 最大 23\%，ILP 最大提升 50\%
+    \item 基于 microbenchmark 创建指令延迟模型，优化指令交织与气泡掩盖
+    \item 平均加速比 11.2\% 最高 23\%，ILP 最大提升 50\%
 \end{itemize}
 
 \datedsubsection{\textbf{VecTrans: Enhancing Compiler Auto-\underline{Vec}torization through LLM-Assisted Code \underline{Trans}formations}}{}
@@ -214,7 +214,7 @@ AscendCL/CUDA. \href{https://wu-kan.cn/2021/03/14/HPL-AI/}{中山大学优秀本
 
 \section{经历}
 
-\datedsubsection{\textbf{微信}, HPC Team. Research Intern, 青云计划}{2025/10 (预期) - 2026/02 (预期)}
+\datedsubsection{\textbf{微信}, HPC Team. Research Intern, \href{https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ==&mid=2650961684&idx=1&sn=45c1e4c4da50169027a689a8c27effb5}{青云计划}}{2025/10 (预期) - 2026/02 (预期)}
 
 \datedsubsection{\textbf{月之暗面}, Mooncake Team. AI Infra Intern}{2025/06 - 2025/09 (预期)}
 
@@ -251,10 +251,8 @@ AscendCL/CUDA. \href{https://wu-kan.cn/2021/03/14/HPL-AI/}{中山大学优秀本
 
 \section{荣誉}
 
-\datedsubsection{\href{https://mp.weixin.qq.com/s/ahnG7gJLBu9CMCYjk1_CkQ}{二等奖\& oneAPI技术创新一等奖}，「英特尔杯」并行应用挑战赛（PAC），应用组}{2022/12}
-\datedsubsection{\href{https://mp.weixin.qq.com/s/k7mjyaKs-rGPOcMQTIrKqg}{金奖（1/unknown）}，鲲鹏应用创新大赛，高性能计算（HPC）赛道}{2022/10}
+\datedsubsection{\href{https://mp.weixin.qq.com/s/k7mjyaKs-rGPOcMQTIrKqg}{金奖（1/unknown）}，鲲鹏应用创新大赛，HPC 赛道}{2022/10}
 \datedsubsection{\href{https://github.com/arcsysu/SYsU-lang-paper}{优秀论文一等奖}，中国高校计算机教育大会（CCEC）}{2022/07}
-\datedsubsection{\href{https://mp.weixin.qq.com/s/L7YX4aaaNAlNCKDYOEhMSA}{二等奖（3/130+）}，ACM中国-国际并行挑战赛（ACM-IPCC）}{2021/11}
 \datedsubsection{\href{https://mp.weixin.qq.com/s/GQsaR_V1NoGzCvbGARMeEA}{二等奖（3/100+）}，「神威杯」并行应用挑战赛（CPC）}{2021/10}
 \datedsubsection{\href{https://mp.weixin.qq.com/s/AJKqG2KvLl6n_88_8IzsYw}{CCF优秀大学生（全国共94名，中山大学共1名）}，中国计算机学会（CCF-ECA）}{2021/09}
 \datedsubsection{\href{https://wu-kan.cn/2021/03/14/HPL-AI/}{优秀本科毕业论文（Top 5\%）}，中山大学}{2021/05}
